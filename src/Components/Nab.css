@@ -4,8 +4,12 @@
 #basic-nav-dropdown{
     color: white;
     margin-right: 30px;
-    font-size: 18px;
-
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 20px;
+    /* z-index: 1; */
+}
+.forz{
+    z-index: 1;
 }
 
 

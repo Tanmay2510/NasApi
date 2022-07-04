@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+.sos{
+    font-family: 'Arima', cursive;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+.sosp{
+    font-family: 'Arima', cursive;
+    font-weight: 400;
+    text-align: left;
+    margin-left:7%;   
+}
+.thegal{
+    background-color: rgb(253, 252, 253);
+    z-index: 1;
+}

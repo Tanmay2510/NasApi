@@ -4,38 +4,49 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
 import "./Nab.css"
+import Theico from '../icon/Theico';
+import zIndex from '@mui/material/styles/zIndex';
 function Nab() {
   const navstyle=
     {
-      fontSize:'22px',
-      marginLeft:'-16px',
+      fontSize:'30px',
+      
+      marginTop:'2px',
       color:'white',
-      fontFamily:'Finlandica'
+      fontFamily: 'Gentium Book Plus, serif'
     }
     const linkstyle=
       {
         color:'white',
-        fontSize:'18px'
+        fontSize:'20px',
+        fontFamily: 'Gentium Book Plus, serif'
+        
       }
     
   
   return (
     <Navbar className="nav-bg" expand="lg">
-    <Container>
-
-      <Navbar.Brand  href="#home" style={navstyle}>NAPP</Navbar.Brand>
+    <Container className="forz">
+      <Theico />
+      <Navbar.Brand  
+       
+      style={navstyle}>NAPP</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto" style={{marginRight:'30px'}} >
-     
-          <NavDropdown title="Offers" id="basic-nav-dropdown"   >
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <Nav className="ms-auto" style={{marginRight:'30px', marginTop:'5px'}} >
+          <NavDropdown title="Offers" id="basic-nav-dropdown">
+            <NavDropdown.Item 
+            >Action</NavDropdown.Item>
+            <NavDropdown.Item 
+            >Another action</NavDropdown.Item>
+            <NavDropdown.Item 
+            >Something</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+            <NavDropdown.Item 
+            >Separated link</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#link" style={linkstyle}>Planets</Nav.Link>
+          <Nav.Link  
+          style={linkstyle}>Planets</Nav.Link>
 
         </Nav>
       </Navbar.Collapse>
