@@ -2,11 +2,12 @@ import React from 'react'
 import { Grid } from '@mui/material'
 import './Halftop.css';
 import Particl from './Particl';
-
+import Theotherhalf from './Theotherhalf';
 function Halftop() {
+    // <Particl />
+
   return (
     <div>
-    <Particl />
 
     <div className='thegal'>
     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
@@ -25,7 +26,7 @@ function Halftop() {
     
   </Grid>
   <Grid item xs={6}>
-    <p>ssa</p>
+    <Theotherhalf />
   </Grid>
   </Grid>
     </div>

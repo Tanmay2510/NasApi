@@ -1,0 +1,40 @@
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.nept{
+    width: 15%;
+}
+.ur{
+    width: 16%;
+}
+.sat{
+    width: 20%;
+    margin-top: -10px;
+
+}
+.sun{
+    /* object-position: -20% 0; */
+    /* height: 50vh; */
+}
+.jup{
+    width: 17%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+.mars{
+    width: 10%;
+}
+.ert{
+    width: 16%;
+}
+.vns{
+    width: 15%;
+}
+.merc{
+    width: 14%;
+    margin-bottom: -15px;
+}
