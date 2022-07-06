@@ -16,6 +16,7 @@
 .sun{   
     clip-path: inset(0 0 70% 0);
     margin-top:-9px ;
+    z-index: 0;
 }
 .jup{
     width: 17%;

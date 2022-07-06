@@ -1,7 +1,8 @@
 import React from 'react'
 import Halftop from './Halftop';
 import Nab from './Nab';
-
+import Thecar from './Thecar';
+import './Allsection.css';
 function Allsection() {
   return (
     <div>
@@ -10,6 +11,7 @@ function Allsection() {
     <Halftop />
     </section>
     <section className='middle'>
+    <Thecar />
     </section>
     </div>
 
