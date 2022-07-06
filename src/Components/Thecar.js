@@ -1,8 +1,7 @@
 import React from 'react'
 import './Thecar.css'
 import Slider from "react-slick";
-import { Grid } from '@mui/material'
-import sun from "../icon/sun.png"
+import Carcomp from './Carcomp';
 function Thecar() {
   const settings = {
     dots: true,
@@ -19,94 +18,10 @@ function Thecar() {
       <h2 className='thepl'> The Planets</h2>
       <Slider {...settings}>
 
-      <div >
-          <h2 className='tp'>Mercury</h2>
-          <div className='tpi'>
-          <p>A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet </p>         
-          <img src = {sun} ></img>
-          </div>
-          
-          </div>
-
-          <div >
-          <h2 className='tp'>Mercury</h2>
-          <div className='tpi'>
-          <p>A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet </p>         
-          <img src = {sun} ></img>
-          </div>
-          
-          </div>
-          <div >
-          <h2 className='tp'>Mercury</h2>
-          <div className='tpi'>
-          <p>A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet
-          A great planet which is a great planet </p>         
-          <img src = {sun} ></img>
-          </div>
-          
-          </div>
-
-
-
-      
-        
-        
+     <Carcomp />
+     <Carcomp />
+     <Carcomp />
+     <Carcomp />
 
       </Slider>
     </div>

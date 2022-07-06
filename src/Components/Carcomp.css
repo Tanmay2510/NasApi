@@ -1,0 +1,20 @@
+.tp{
+    text-align: left;
+    margin-left: 8%;
+  }
+  .tpi{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+  }
+  .tpi p{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-size: 18px;
+  }
+
+  .tpi img{
+    margin-top:-5%;
+    margin-right: 4%;
+    width: 30%;
+  }
