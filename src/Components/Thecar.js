@@ -16,7 +16,7 @@ function Thecar() {
   };
   return (
     <div className='cara'>
-      <h2> The Planets</h2>
+      <h2 className='thepl'> The Planets</h2>
       <Slider {...settings}>
 
       <div >
