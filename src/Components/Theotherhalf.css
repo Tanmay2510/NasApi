@@ -12,18 +12,13 @@
 }
 .sat{
     width: 20%;
-    margin-top: -10px;
-
 }
-/* .sun{
-    /* object-position: -20% 0; */
-    /* height: 50vh; */
-/* } */ 
+.sun{   
+    clip-path: inset(0 0 70% 0);
+    margin-top:-9px ;
+}
 .jup{
     width: 17%;
-    margin-top: -10px;
-    margin-bottom: 10px;
-
 }
 .mars{
     width: 10%;
@@ -36,5 +31,4 @@
 }
 .merc{
     width: 14%;
-    margin-bottom: -15px;
 }

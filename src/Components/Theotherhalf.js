@@ -23,8 +23,11 @@ function Theotherhalf() {
        <img src={venus} className='vns'></img> 
        <img src={mercury} className='merc'></img> 
      </Draggable>
-        <img src={sun} className='sun'></img>
-    </div>
+     
+     <img src={sun} className='sun'></img>
+     
+
+     </div>
   )
 }
 
