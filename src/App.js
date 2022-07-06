@@ -1,12 +1,10 @@
 import './App.css';
-import Halftop from './Components/Halftop';
-import Nab from './Components/Nab';
+import Allsection from './Components/Allsection';
 
 function App() {
   return (
     <div className="App">
-        <Nab />
-        <Halftop />
+        <Allsection />
     </div>
   );
 }
