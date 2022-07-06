@@ -1,7 +1,8 @@
 import React from 'react'
 import './Thecar.css'
 import Slider from "react-slick";
-
+import { Grid } from '@mui/material'
+import sun from "../icon/sun.png"
 function Thecar() {
   const settings = {
     dots: true,
@@ -9,30 +10,104 @@ function Thecar() {
     infinite: true,
     speed: 700,
     slidesToShow: 1,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
+   
+ 
   };
   return (
     <div className='cara'>
-      <h2> Single Item</h2>
+      <h2> The Planets</h2>
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+
+      <div >
+          <h2 className='tp'>Mercury</h2>
+          <div className='tpi'>
+          <p>A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet </p>         
+          <img src = {sun} ></img>
+          </div>
+          
+          </div>
+
+          <div >
+          <h2 className='tp'>Mercury</h2>
+          <div className='tpi'>
+          <p>A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet </p>         
+          <img src = {sun} ></img>
+          </div>
+          
+          </div>
+          <div >
+          <h2 className='tp'>Mercury</h2>
+          <div className='tpi'>
+          <p>A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet </p>         
+          <img src = {sun} ></img>
+          </div>
+          
+          </div>
+
+
+
+      
+        
+        
+
       </Slider>
     </div>
   );

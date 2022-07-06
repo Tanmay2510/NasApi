@@ -1,0 +1,50 @@
+ <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{display:"inline"}} >
+
+        
+        <Grid item xs={6}>
+          <h2>Mercury</h2>
+          <p>A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet
+          A great planet which is a great planet </p>
+          </Grid>
+          <Grid item xs={6}>
+          <img src = {sun} ></img>
+          </Grid>
+        
+        
+        <Grid item xs={6}>
+        <h2>Mercury</h2>
+        <p>A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet </p>
+        </Grid>
+        <Grid item xs={6}>
+        <img src = {sun} ></img>
+        </Grid>
+        <Grid item xs={6}>
+        <h2>Mercury</h2>
+        <p>A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet </p>
+        </Grid>
+        <Grid item xs={6}>
+        <img src = {sun} ></img>
+        </Grid>
+        <Grid item xs={6}>
+        <h2>Mercury</h2>
+        <p>A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet
+        A great planet which is a great planet </p>
+        </Grid>
+        <Grid item xs={6}>
+        <img src = {sun} ></img>
+        </Grid>
+        </Grid>
