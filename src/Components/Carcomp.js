@@ -1,7 +1,7 @@
 import React from 'react'
-import sun from "../icon/sun.png"
+// import sun from "../icon/sun.png"
 import "./Carcomp.css"
-function Carcomp() {
+function Carcomp(props) {
   return (
     <div >
     <h2 className='tp'>Mercury</h2>
@@ -26,7 +26,7 @@ function Carcomp() {
     A great planet which is a great planet
     A great planet which is a great planet
     A great planet which is a great planet </p>         
-    <img src = {sun} ></img>
+    <img src = {props.name} style={props.st}></img>
     </div>
     
     </div>
