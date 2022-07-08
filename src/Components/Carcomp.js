@@ -1,34 +1,29 @@
 import React from 'react'
-// import sun from "../icon/sun.png"
 import "./Carcomp.css"
+import Button from 'react-bootstrap/Button';
+
 function Carcomp(props) {
+    
   return (
-    <div >
-    <h2 className='tp'>Mercury</h2>
+    <div className='whole'>
+    <h2 className='tp'>Planet {props.namee}</h2>
     <div className='tpi'>
-    <p>A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet
-    A great planet which is a great planet </p>         
+    <p>
+    {props.content}
+   <br></br>
+    {props.namee} size:  <br></br>
+    {props.namee} gravity: <br></br>
+    {props.namee} age:  <br></br>
+    </p>
+
+
+
+    
+             
     <img src = {props.name} style={props.st}></img>
     </div>
-    
+    <Button variant="outline-secondary"> Read More...
+</Button>
     </div>
   );
 }

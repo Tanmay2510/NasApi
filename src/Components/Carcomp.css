@@ -2,18 +2,21 @@
     text-align: left;
     margin-left: 8%;
   }
-  .ven{
-    width: 500px;
-  }
+
   .tpi{
     display: flex;
     text-align: left;
     justify-content: space-evenly;
   }
+  .whole{
+    margin-bottom: 20px;
+    color: beige;
+  }
+ 
   .tpi p{
     margin-left: 8%;
     margin-right: 8%;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .tpi img{
