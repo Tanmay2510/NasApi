@@ -5,6 +5,7 @@ import Thecar from './Thecar';
 import './Allsection.css';
 import Bott from './Bott';
 function Allsection() {
+  //to the bot add icon  in the middle and  planets around them 
   return (
     <div>
     <section className="top">
