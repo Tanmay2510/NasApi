@@ -1,7 +1,5 @@
 import React from 'react'
 import "./Carcomp.css"
-import Button from 'react-bootstrap/Button';
-
 function Carcomp(props) {
     
   return (
@@ -11,19 +9,19 @@ function Carcomp(props) {
     <p>
     {props.content}
    <br></br>
-    {props.namee} size:  <br></br>
-    {props.namee} gravity: <br></br>
-    {props.namee} age:  <br></br>
+    {props.namee} size: {props.siz} <br></br>
+    {props.namee} gravity: {props.g}<br></br>
+    {props.namee} age: {props.age} <br></br>
+    
     </p>
-
+    
 
 
     
              
     <img src = {props.name} style={props.st}></img>
     </div>
-    <Button variant="outline-secondary"> Read More...
-</Button>
+  
     </div>
   );
 }

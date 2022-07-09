@@ -1,19 +1,23 @@
 .tp{
     text-align: left;
     margin-left: 8%;
+    font-family: 'Arima', cursive;
   }
 
   .tpi{
     display: flex;
     text-align: left;
     justify-content: space-evenly;
+    margin-bottom: -41px;
   }
   .whole{
     margin-bottom: 20px;
     color: beige;
+    ;
   }
  
   .tpi p{
+    font-family: 'Arima', cursive;
     margin-left: 8%;
     margin-right: 8%;
     font-size: 22px;

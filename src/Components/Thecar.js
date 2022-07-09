@@ -10,20 +10,18 @@ import jupiterr from "../images/jupiterr.png"
 import saturnn from "../images/saturnn.png"
 import uranuss from "../images/uranuss.png"
 import neptunee from "../images/neptunee.png"
+import { Button } from '@mui/material';
 function Thecar() {
   const settings = {
-    dots: true,
     fade:true,
     infinite: true,
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-   
- 
   };
-  var st={
-    width:"10%"
-  }
+  const ea="4.543 billion years";
+  const jma="4.603 billion years";
+  const mnvus="4.503 billion years";
   const vc = `Named after the ancient Roman goddess of beauty, Venus is known for its exceptional brightness.
   The planet is the second closest planet to the sun, it's by far the hottest of the eight worlds in our solar system. Its thick atmosphere is mostly made of carbon dioxide with clouds of sulfuric acid, which traps the sun's heat and creates a runaway greenhouse effect.`;
   const mc = `Named for the fleet-footed Roman messenger god, Mercury is the closest planet to the sun, zipping around our parent star at an average of 36 million miles away.  Mercury is the fastest planet in the solar system, speeding along at about 29 miles per second and 
@@ -58,50 +56,69 @@ function Thecar() {
       content={mc}
       namee={"Mercury"}
       name={mercuryy}
+      g={" 3.7 m/s²"}
+      age={mnvus}
+      siz={" 4879.4(diameter in Km) || 38% the size of Earth"}
       />
       <Carcomp 
       namee={"Venus"}
       content={vc}  
-
       name={venuss}
+      age={mnvus}
+      g={" 8.87 m/s²"}
+      siz={" 12104(diameter in Km) || 95% the size of Earth"}
       /> 
      <Carcomp 
      namee={"Earth"}
      content={ec}
+     age={ea}
      name={earthh}
+     g={" 9.807 m/s²"}
+     siz={" 12756(diameter in km) || 100% the size of Earth"}
      />
      <Carcomp 
      namee={"Mars"}
      content={mrc}
      name={marss}
+     age={jma}
+     g={" 3.721 m/s²"}
+     siz={" 6779(diameter in km) || 53% the size of Earth"}
      />
      <Carcomp 
      content={jc}
      namee={"Jupiter"}
+     g={" 24.79 m/s²"}
      name={jupiterr}
+     age={jma}
+     siz={" 142800(diameter in km) || 1120% the size of Earth"}
      />
      <Carcomp 
      content={sc}
      namee={"Saturn"}
      name={saturnn}
+     age={mnvus}
+     g={" 10.44 m/s²"}
+     siz={" 120660(diameter in km) || 945% the size of Earth"}
      />
      <Carcomp 
      content={uc}
      namee={"Uranus"}
+     age={mnvus}
+     g={" 8.87 m/s²"}
      name={uranuss}
+     siz={" 51118(diameter in km) || 400% the size of Earth"}
      />
      <Carcomp 
      content={nc}
      namee={"Neptune"}
+     g={" 11.15 m/s²"}
+     age={mnvus}
      name={neptunee}
+     siz={" 49528(diameter in km) || 388% the size of Earth"}
      />
-    
-
       </Slider>
+      <Button color="secondary" variant="outlined">Read More...</Button>
     </div>
   );
   }
-
-
-
 export default Thecar

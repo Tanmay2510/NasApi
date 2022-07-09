@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;300&family=Edu+SA+Beginner&display=swap');
+
 .cara{
     background-color: black;
 
@@ -14,8 +16,10 @@
   }
   
   .thepl{
+    font-family: 'Edu SA Beginner', cursive;
     padding-top: 15px;
     color: beige;
+    font-size: 55px;
   }
 
   
