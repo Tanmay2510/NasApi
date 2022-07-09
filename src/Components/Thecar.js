@@ -123,7 +123,7 @@ function Thecar() {
       dragConstraints={{
         top: -50,
         left: -50,
-        right: 10,
+        right: 50,
         bottom: 50,
       }}>
       <Button color="secondary" variant="outlined">Read More...</Button>
