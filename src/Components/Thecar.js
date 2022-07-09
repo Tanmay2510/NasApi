@@ -1,6 +1,7 @@
 import React from 'react'
 import './Thecar.css'
 import Slider from "react-slick";
+import { motion } from "framer-motion"
 import Carcomp from './Carcomp';
 import earthh from "../images/earthh.png"
 import mercuryy from "../images/mercuryy.png"
@@ -117,7 +118,17 @@ function Thecar() {
      siz={" 49528(diameter in km) || 388% the size of Earth"}
      />
       </Slider>
+      <motion.div
+      drag
+      dragConstraints={{
+        top: -50,
+        left: -50,
+        right: 10,
+        bottom: 50,
+      }}>
       <Button color="secondary" variant="outlined">Read More...</Button>
+      </motion.div>
+
     </div>
   );
   }
