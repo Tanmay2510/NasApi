@@ -18,14 +18,14 @@ function Particl() {
     options={{
         particles: {
           number: {
-            value: 500,
+            value: 400,
             density: {
               enable: true,
               value_area: 800
             }
           },
           color: {
-            value: "#66BFBF"
+            value: "#fff"
           },
           shape: {
             type: "star",
@@ -53,7 +53,7 @@ function Particl() {
             }
           },
           size: {
-            value: 3,
+            value: 2,
             random: true,
             anim: {
               enable: false,

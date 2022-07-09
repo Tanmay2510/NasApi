@@ -4,10 +4,10 @@ import './Halftop.css';
 import Particl from './Particl';
 import Theotherhalf from './Theotherhalf';
 function Halftop() {
-    // <Particl />
 
   return (
     <div>
+     <Particl />
 
     <div className='thegal'>
     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
@@ -21,11 +21,9 @@ function Halftop() {
     
     In the outer reaches of the Solar System lies a class of minor planets called detached objects. There is considerable debate as to how many such objects there will prove to be.Some of these objects are large enough to have rounded under their own gravity and thus to be categorized as dwarf planets. Astronomers generally accept about nine objects as dwarf planets: the asteroid Ceres, the Kuiper-belt objects Pluto, Orcus, Haumea, Quaoar and Makemake, and the scattered-disk objects Gonggong and Eris, and Sedna. Various small-body populations, including comets, centaurs and interplanetary dust clouds, freely travel between the regions of the Solar System.
     
-    The solar wind, a stream of charged particles flowing outwards from the Sun, creates a bubble-like region of interplanetary medium in the interstellar medium known as the heliosphere. The heliopause is the point at which pressure from the solar wind is equal to the opposing pressure of the interstellar medium; it extends out to the edge of the scattered disc.The Solar System is located 26,000 light-years from the center of the Milky Way sgalaxy in the Orion Arm, which contains most of the visible stars in the night sky. The nearest stars are within the so-called Local Bubble, with the closest,
-     Proxima Centauri, at 4.2441 light-years.</p>
-    
+</p>    
   </Grid>
-  <Grid item xs={6}>
+  <Grid item xs={6} className='theot'>
     <Theotherhalf />
   </Grid>
   </Grid>

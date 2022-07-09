@@ -3,6 +3,7 @@ import Halftop from './Halftop';
 import Nab from './Nab';
 import Thecar from './Thecar';
 import './Allsection.css';
+import Bott from './Bott';
 function Allsection() {
   return (
     <div>
@@ -12,6 +13,9 @@ function Allsection() {
     </section>
     <section className='middle'>
     <Thecar />
+    </section>
+    <section className='bot'>
+    <Bott />
     </section>
     </div>
 

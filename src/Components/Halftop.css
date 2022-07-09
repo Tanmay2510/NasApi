@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 .sos{
     font-family: 'Arima', cursive;
     text-align: left;
     margin-left: 7%;
     margin-top: 3%;
+    color:white;
+
+}
+.theot{
+    z-index: 1;
 }
 .sosp{
-    font-family: 'Arima', cursive;
-    font-weight: 400;
+    color:white;
+    line-height: 23px;
+    word-spacing: 5px;
+    font-family: 'Poppins', sans-serif;
     text-align: left;
     margin-left:7%;   
-    font-size: 17px;
+    font-size: 19px;
 }
 .thegal{
-    background-color: rgb(253, 252, 253);
+    background-color: black;
+
+    /* background-color: rgb(253, 252, 253); */
     z-index: 1;
 }
