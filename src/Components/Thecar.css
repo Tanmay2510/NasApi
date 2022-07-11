@@ -3,23 +3,20 @@
 .cara{
   background-color: rgb(208, 164, 230);
 }
-
-
-.slick-prev {
-    left: 3% !important;
-    z-index: 1;
-  }
-  .slick-next {
-    right: 3% !important;
-    z-index: 1;
-  }
-  
   .thepl{
     font-family: 'Arima', cursive;
     padding-top: 15px;
     color: black;
     font-size: 55px;
   }
-
+  .carousel-indicators{
+    visibility: hidden;
+  }
+  
+  
+  
+  .carousel-control-prev {
+    left: -5%;
+}
   
   

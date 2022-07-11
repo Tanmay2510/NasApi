@@ -1,7 +1,5 @@
 import React from 'react'
 import './Thecar.css'
-import Slider from "react-slick";
-import { motion } from "framer-motion"
 import Carcomp from './Carcomp';
 import earthh from "../images/earthh.png"
 import mercuryy from "../images/mercuryy.png"
@@ -11,15 +9,10 @@ import jupiterr from "../images/jupiterr.png"
 import saturnn from "../images/saturnn.png"
 import uranuss from "../images/uranuss.png"
 import neptunee from "../images/neptunee.png"
-import { Button } from '@mui/material';
+import Carousel from 'react-bootstrap/Carousel';
+// import { i } from "./Carcomp"
 function Thecar() {
-  const settings = {
-    fade:true,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+
   const ea="4.543 billion years";
   const jma="4.603 billion years";
   const mnvus="4.503 billion years";
@@ -46,88 +39,113 @@ function Thecar() {
   
   const sc=`Saturn was the most distant of the five planets known to the ancients. In 1610, Italian astronomer Galileo Galilei was the first to gaze at Saturn through a telescope.In 1659, Dutch astronomer Christiaan Huygens, using a more powerful telescope than Galileo's,
    proposed that Saturn was surrounded by a thin, flat ring.`
-
+  
   const mrc=`The red planet Mars, named for the Roman god of war, has long been an omen in the night sky. And in its own way, the planet’s rusty red surface tells a story of destruction. Billions of years ago, the fourth planet from the sun could have been mistaken for Earth’s smaller twin,
    with liquid water on its surface—and maybe even life.Mars rotates on its axis every 24.6 Earth hours, defining the length of a Martian day, which is called a sol (short for “solar day”).`
   return (
     <div className='cara'>
       <h1 className='thepl'> The Planets</h1>
-      <Slider {...settings}>
+      <Carousel >
+      <Carousel.Item>
+     
       <Carcomp 
       content={mc}
+      ind='0' 
       namee={"Mercury"}
       name={mercuryy}
       g={" 3.7 m/s²"}
       age={mnvus}
       siz={" 4879.4(diameter in Km) || 38% the size of Earth"}
       />
+      </Carousel.Item>
+      <Carousel.Item>
+   
       <Carcomp 
       namee={"Venus"}
+      ind='1'
       content={vc}  
       name={venuss}
       age={mnvus}
       g={" 8.87 m/s²"}
       siz={" 12104(diameter in Km) || 95% the size of Earth"}
       /> 
+      </Carousel.Item>
+      <Carousel.Item>
      <Carcomp 
      namee={"Earth"}
+     ind='2'
      content={ec}
      age={ea}
      name={earthh}
      g={" 9.807 m/s²"}
      siz={" 12756(diameter in km) || 100% the size of Earth"}
      />
+     </Carousel.Item>
+
+     <Carousel.Item>
      <Carcomp 
      namee={"Mars"}
+     ind='3'
+
      content={mrc}
      name={marss}
      age={jma}
      g={" 3.721 m/s²"}
      siz={" 6779(diameter in km) || 53% the size of Earth"}
      />
+     </Carousel.Item>
+
+     <Carousel.Item>
      <Carcomp 
      content={jc}
      namee={"Jupiter"}
+     ind='4'
      g={" 24.79 m/s²"}
      name={jupiterr}
      age={jma}
      siz={" 142800(diameter in km) || 1120% the size of Earth"}
      />
+     </Carousel.Item>
+
+     <Carousel.Item>
      <Carcomp 
      content={sc}
+     ind='5'
      namee={"Saturn"}
      name={saturnn}
      age={mnvus}
      g={" 10.44 m/s²"}
      siz={" 120660(diameter in km) || 945% the size of Earth"}
      />
+     </Carousel.Item>
+
+     <Carousel.Item>
      <Carcomp 
      content={uc}
+     ind='6'
      namee={"Uranus"}
      age={mnvus}
      g={" 8.87 m/s²"}
      name={uranuss}
      siz={" 51118(diameter in km) || 400% the size of Earth"}
      />
+     </Carousel.Item>
+
+     <Carousel.Item>
      <Carcomp 
      content={nc}
      namee={"Neptune"}
+     ind='7'
      g={" 11.15 m/s²"}
      age={mnvus}
      name={neptunee}
      siz={" 49528(diameter in km) || 388% the size of Earth"}
      />
-      </Slider>
-      <motion.div
-      drag
-      dragConstraints={{
-        top: -50,
-        left: -50,
-        right: 50,
-        bottom: 50,
-      }}>
-      <Button color="secondary" variant="outlined">Read More...</Button>
-      </motion.div>
+     </Carousel.Item>
+
+     </Carousel>
+
+     
 
     </div>
   );
