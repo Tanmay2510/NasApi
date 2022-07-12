@@ -12,7 +12,14 @@ import neptunee from "../images/neptunee.png"
 import Carousel from 'react-bootstrap/Carousel';
 // import { i } from "./Carcomp"
 function Thecar() {
-
+  const stt={
+    marginRight:"10px",
+    width:"450px",
+    height:"450px"
+  }
+  const st ={
+    marginTop:"10px"
+  }
   const ea="4.543 billion years";
   const jma="4.603 billion years";
   const mnvus="4.503 billion years";
@@ -38,15 +45,17 @@ function Thecar() {
   Uranus was the first of three planets in our solar system discovered thanks to the invention of the telescope`
   
   const sc=`Saturn was the most distant of the five planets known to the ancients. In 1610, Italian astronomer Galileo Galilei was the first to gaze at Saturn through a telescope.In 1659, Dutch astronomer Christiaan Huygens, using a more powerful telescope than Galileo's,
-   proposed that Saturn was surrounded by a thin, flat ring.`
+   proposed that Saturn was surrounded by a thin, flat ring.The rings of Saturn are the most extensive of any other planet. They cannot be seen without an unaided eye.`
   
   const mrc=`The red planet Mars, named for the Roman god of war, has long been an omen in the night sky. And in its own way, the planet’s rusty red surface tells a story of destruction. Billions of years ago, the fourth planet from the sun could have been mistaken for Earth’s smaller twin,
    with liquid water on its surface—and maybe even life.Mars rotates on its axis every 24.6 Earth hours, defining the length of a Martian day, which is called a sol (short for “solar day”).`
   return (
     <div className='cara'>
+    
       <h1 className='thepl'> The Planets</h1>
-      <Carousel >
-      <Carousel.Item>
+      
+      <Carousel  >
+      <Carousel.Item style={{height:"450px"}}>
      
       <Carcomp 
       content={mc}
@@ -58,7 +67,7 @@ function Thecar() {
       siz={" 4879.4(diameter in Km) || 38% the size of Earth"}
       />
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{height:"450px"}}>
    
       <Carcomp 
       namee={"Venus"}
@@ -70,7 +79,7 @@ function Thecar() {
       siz={" 12104(diameter in Km) || 95% the size of Earth"}
       /> 
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      namee={"Earth"}
      ind='2'
@@ -82,7 +91,7 @@ function Thecar() {
      />
      </Carousel.Item>
 
-     <Carousel.Item>
+     <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      namee={"Mars"}
      ind='3'
@@ -95,7 +104,7 @@ function Thecar() {
      />
      </Carousel.Item>
 
-     <Carousel.Item>
+     <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      content={jc}
      namee={"Jupiter"}
@@ -107,19 +116,21 @@ function Thecar() {
      />
      </Carousel.Item>
 
-     <Carousel.Item>
+     <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      content={sc}
      ind='5'
+     st={st}
      namee={"Saturn"}
      name={saturnn}
      age={mnvus}
+     
      g={" 10.44 m/s²"}
      siz={" 120660(diameter in km) || 945% the size of Earth"}
      />
      </Carousel.Item>
 
-     <Carousel.Item>
+     <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      content={uc}
      ind='6'
@@ -131,13 +142,14 @@ function Thecar() {
      />
      </Carousel.Item>
 
-     <Carousel.Item>
+     <Carousel.Item style={{height:"450px"}}>
      <Carcomp 
      content={nc}
      namee={"Neptune"}
      ind='7'
      g={" 11.15 m/s²"}
      age={mnvus}
+     st={stt}
      name={neptunee}
      siz={" 49528(diameter in km) || 388% the size of Earth"}
      />

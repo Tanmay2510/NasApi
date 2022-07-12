@@ -2,6 +2,7 @@
 
 .cara{
   background-color: rgb(208, 164, 230);
+  z-index: 2;
 }
   .thepl{
     font-family: 'Arima', cursive;
@@ -15,8 +16,22 @@
   
   
   
-  .carousel-control-prev {
-    left: -5%;
+
+.carousel {
+  /* width:900px;
+  height:500px; */
+  margin: auto;
 }
-  
+.carousel-control-prev-icon {
+  margin-left: -30%;
+}
+.carousel-control-next-icon {
+  margin-right: -40%;
+}
+@media (max-width: 900px) {
+  .carousel {
+    width:auto;
+    height:auto;
+  }
+}
   

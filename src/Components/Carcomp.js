@@ -1,12 +1,16 @@
 import React from 'react'
 import "./Carcomp.css"
+import { useNavigate} from 'react-router-dom';
 import { motion } from "framer-motion"
 
 import { Button } from '@mui/material';
-export var eind ;
 function Carcomp(props) {
-  console.log(props.ind);
-  eind=props.ind;
+  const navigate = useNavigate();
+
+  const  navig = () => {
+      var browse="/"+props.namee;
+      navigate("/Planets");
+  }
   return (
     <div className='whole'>
     <h2 className='tp'>Planet {props.namee}</h2>
@@ -26,16 +30,19 @@ function Carcomp(props) {
              
     <img src = {props.name} style={props.st}></img>
     </div>
+    <div className='arbut'>
     <motion.div
     drag
     dragConstraints={{
       top: -50,
       left: -50,
       right: 50,
-      bottom: 50,
+     
     }}>
-    <Button color="secondary"  variant="outlined">Read More...</Button>
+
+    <Button color="secondary" onClick={navig} variant="outlined">Read More About {props.namee}...</Button>
     </motion.div>
+    </div>
   
     </div>
   );
