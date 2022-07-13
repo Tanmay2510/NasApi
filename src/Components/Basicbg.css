@@ -1,0 +1,11 @@
+.theicons{
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    background: rgba(151, 153, 160, 0.4); 
+    backdrop-filter: blur(1px);
+}
+.bg{
+    background: black;
+}

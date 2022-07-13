@@ -9,7 +9,7 @@ function Carcomp(props) {
 
   const  navig = () => {
       var browse="/"+props.namee;
-      navigate("/Planets");
+      navigate(browse);
   }
   return (
     <div className='whole'>
