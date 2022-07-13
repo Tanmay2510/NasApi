@@ -1,11 +1,25 @@
 .theicons{
-    padding-top: 20px;
+    height: 90px;
     display: flex;
-    padding-bottom: 20px;
     justify-content: space-evenly;
-    background: rgba(151, 153, 160, 0.4); 
-    backdrop-filter: blur(1px);
-}
-.bg{
     background: black;
+}
+.theicons img{
+    margin-top: 10px;
+    width: 70px;
+}
+.icons{
+    margin-left: 94px;
+    margin-top: 10px;
+}
+.wholename{
+    color: whitesmoke;
+    font-family: 'Arima', cursive;   
+}
+.wholename h2{
+    margin-top:10px;
+}
+.wholename h2:hover{
+    color:rgb(145, 145, 145);
+    cursor: pointer;
 }
