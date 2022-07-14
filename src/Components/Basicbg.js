@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Theico from '../icon/Theico';
 import mars from "../icon/mars.png"
 import neptune from "../icon/neptune.png"
@@ -10,6 +10,7 @@ import venus from "../icon/venus.png"
 import { Draggable } from 'react-drag-reorder'
 import "./Basicbg.css"
 import mercury from "../icon/mercury.png"
+import Model from "./Model";
 function Basicbg() {
   return (
     <div className='bg'>
@@ -33,7 +34,11 @@ function Basicbg() {
     <img src={venus}></img>
      </Draggable>
      </div>
-    </div>
+     
+     <Model />
+     
+
+     </div>
   )
 }
 export default Basicbg

@@ -1,23 +1,28 @@
 .theicons{
     height: 90px;
     display: flex;
+
     justify-content: space-evenly;
-    background: black;
+    background: transparent
 }
 .theicons img{
     margin-top: 10px;
     width: 70px;
 }
+.bg{
+    background-color: black;
+  
+}
+
 .icons{
     margin-left: 94px;
-    margin-top: 10px;
 }
 .wholename{
     color: whitesmoke;
     font-family: 'Arima', cursive;   
 }
 .wholename h2{
-    margin-top:10px;
+    margin-top:-20px;
 }
 .wholename h2:hover{
     color:rgb(145, 145, 145);
