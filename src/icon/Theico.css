@@ -3,4 +3,5 @@
     margin-left: -70px;
     z-index: 1;
     cursor: pointer;
+    background-color: transparent !important;
 }

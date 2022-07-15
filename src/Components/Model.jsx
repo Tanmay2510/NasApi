@@ -4,8 +4,8 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import  Planets  from "./Planets";
 const CanvasContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 170%;
   
 `;
 
