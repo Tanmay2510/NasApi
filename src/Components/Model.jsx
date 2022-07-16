@@ -2,11 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import  Planets  from "./Planets";
+import  Earth  from "./Earth";
+import Mars from "./Mars";
 const CanvasContainer = styled.div`
-  width: 50%;
-  height: 170%;
-  
+width:50%;
 `;
 
 
@@ -15,7 +14,8 @@ function Model() {
     <CanvasContainer>
     <Canvas>
       <Suspense fallback={null}>
-        <Planets />
+        <Earth
+        />
       </Suspense>
     </Canvas>
   </CanvasContainer>

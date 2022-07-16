@@ -3,12 +3,13 @@
     height: 90px !important;
     display: flex;
     justify-content: space-evenly;
+    background-color: black;
 }
 .theicons img{
     margin-top: 10px;
     width: 70px;
     
-    background-color: transparent !important; 
+    background-color: black !important; 
 }
 .hh{
         margin: 10px 0;
@@ -17,22 +18,27 @@
     
 }
 .themid{
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-flex;
+    
 }
 .icons{
-    margin-left: 94px;
+    margin-left: 100px;
     background-color: transparent !important ;
+    margin-bottom:20px;
+
 }
 .wholename{
     color: whitesmoke;
     font-family: 'Arima', cursive;  
-    background-color: transparent !important; 
+    background-color: black !important; 
+    margin-top: 15px;
 }
 .wholename h2{
-    margin-top:-20px;
-    background-color: transparent !important; 
-
+    margin-top:-10px;
+    background-color: black !important; 
+}
+.bg{
+    background-color: black !important;
 }
 .wholename h2:hover{
     color:rgb(145, 145, 145);
@@ -43,10 +49,14 @@
     text-align: left;
     margin-left:2%;
     font-size: 17px;
+    width: 50%;
+    margin-right: 10px;
     font-family: 'Merriweather', serif;
+    background-color: black;
 }
 .content h2{
     height: 3% !important;
     font-family: 'Gentium Plus', serif;
     font-size: 35px;
+    margin-bottom: -20px;
 }

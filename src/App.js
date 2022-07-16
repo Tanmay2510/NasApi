@@ -10,7 +10,7 @@ function App() {
     <div className="App">
     <Routes>
     <Route exact path ="/" element={      <Allsection/>   }>    </Route>
-    <Route exact path ="/basic" element={      <Basicbg />   }> </Route>
+    <Route exact path ="/Earth" element={      <Basicbg />   }> </Route>
 
     </Routes>
     </div>
