@@ -1,23 +1,26 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-// import * as THREE from "three";
+import * as THREE from "three";
+import VenDayMap from "./textures/Vensurf.jpg";
+import venSpecularMap from "./textures/venusbump.jpg";
+import venAtmMap from "./textures/Venatm.jpg";
 import { TextureLoader } from "three";
-import Marsmap from "./textures/normalmar.jpg"
-import ColorMap from "./textures/8kmars.jpg"
-import Marspecularmap from "./textures/specmar.jpg"
- function Mars(props) {
-  const [normalMap,colorMap,specularMap] = useLoader(
+
+ function Venus(props) {
+  const [colorMap, specularMap, cloudsMap] = useLoader(
     TextureLoader,
-    [Marsmap,ColorMap,Marspecularmap]
+    [VenDayMap, venSpecularMap,venAtmMap]
   );
 
-  const marsRef = useRef();
+  const venRef = useRef();
+  const cloudsRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
-    marsRef.current.rotation.y = elapsedTime / 6;
+    venRef.current.rotation.y = elapsedTime / 6;
+    cloudsRef.current.rotation.y = elapsedTime / 6;
   });
 
   return (
@@ -32,14 +35,21 @@ import Marspecularmap from "./textures/specmar.jpg"
         saturation={0}
         fade={true}
       />
-    
-      <mesh ref={marsRef} position={[0, 0, 3]} >
+      <mesh ref={cloudsRef} position={[0, 0, 3]} >
+        <sphereGeometry args={[1.000, 32, 32]} />
+        <meshPhongMaterial
+          map={cloudsMap}
+          opacity={0.4}
+          depthWrite={true}
+          transparent={true}
+          side={THREE.DoubleSide}
+        />
+      </mesh>
+      <mesh ref={venRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
-        
         <meshStandardMaterial
-        map={colorMap}
-          normalMap={normalMap}
+          map={colorMap}
           metalness={0.4}
           roughness={0.7}
         />
@@ -56,4 +66,4 @@ import Marspecularmap from "./textures/specmar.jpg"
     </>
   );
 }
-export default Mars;
+export default Venus;

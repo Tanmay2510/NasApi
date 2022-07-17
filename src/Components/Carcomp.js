@@ -2,13 +2,13 @@ import React from 'react'
 import "./Carcomp.css"
 import { useNavigate} from 'react-router-dom';
 import { motion } from "framer-motion"
-
+export var browse;
 import { Button } from '@mui/material';
 function Carcomp(props) {
   const navigate = useNavigate();
 
   const  navig = () => {
-      var browse="/"+props.namee;
+       browse="/"+props.namee;
       navigate(browse);
   }
   return (
