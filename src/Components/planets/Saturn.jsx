@@ -2,31 +2,30 @@ import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
-import VenDayMap from "./textures/Vensurf.jpg";
-import venSpecularMap from "./textures/venusbump.jpg";
-import venAtmMap from "./textures/Venatm.jpg";
 import { TextureLoader } from "three";
+import satMap from "../textures/8ksaturn.jpg"
+import satringMap from "../textures/8ksatring.png"
 
- function Venus(props) {
-  const [colorMap, specularMap, cloudsMap] = useLoader(
+ function Saturn(props) {
+  const [colorMap , ringMap] = useLoader(
     TextureLoader,
-    [VenDayMap, venSpecularMap,venAtmMap]
+    [satMap,  satringMap]
   );
 
-  const venRef = useRef();
+  const satRef = useRef();
   const cloudsRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
-    venRef.current.rotation.y = elapsedTime / 6;
+    satRef.current.rotation.y = elapsedTime / 6;
     cloudsRef.current.rotation.y = elapsedTime / 6;
   });
 
   return (
     <>
       {/* <ambientLight intensity={1} /> */}
-      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={2.2} />
+      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={0.9} />
       <Stars
         radius={300}
         depth={60}
@@ -35,19 +34,19 @@ import { TextureLoader } from "three";
         saturation={0}
         fade={true}
       />
-      <mesh ref={cloudsRef} position={[0, 0, 3]} >
-        <sphereGeometry args={[1.000, 32, 32]} />
-        <meshPhongMaterial
-          map={cloudsMap}
-          opacity={0.4}
-          depthWrite={true}
+    
+      <mesh
+     
+      ref={cloudsRef}>
+         <ringBufferGeometry args={[1, 1, 1]} />
+         <meshPhongMaterial
+          map={ringMap}
+          opacity={1}
           transparent={true}
-          side={THREE.DoubleSide}
         />
-      </mesh>
-      <mesh ref={venRef} position={[0, 0, 3]} >
+   </mesh>
+      <mesh ref={satRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />
-        <meshPhongMaterial specularMap={specularMap} />
         <meshStandardMaterial
           map={colorMap}
           metalness={0.4}
@@ -66,4 +65,4 @@ import { TextureLoader } from "three";
     </>
   );
 }
-export default Venus;
+export default Saturn;

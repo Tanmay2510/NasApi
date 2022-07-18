@@ -1,28 +1,28 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-// import * as THREE from "three";
+import * as THREE from "three";
+import Jupitermap from "../textures/8kjupiter.jpg";
 import { TextureLoader } from "three";
-import ColorMap from "./textures/8kmercury.jpg"
-import Mercpecularmap from "./textures/mercurybump.jpg"
- function Mercury(props) {
-  const [colorMap,specularMap] = useLoader(
+
+ function Jupiter(props) {
+  const [colorMap] = useLoader(
     TextureLoader,
-    [ColorMap,Mercpecularmap]
+    [Jupitermap]
   );
 
-  const mercRef = useRef();
+  const venRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
-    mercRef.current.rotation.y = elapsedTime / 6;
+    venRef.current.rotation.y = elapsedTime / 6;
   });
 
   return (
     <>
       {/* <ambientLight intensity={1} /> */}
-      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={2.2} />
+      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={1.1} />
       <Stars
         radius={300}
         depth={60}
@@ -31,13 +31,11 @@ import Mercpecularmap from "./textures/mercurybump.jpg"
         saturation={0}
         fade={true}
       />
-    
-      <mesh ref={mercRef} position={[0, 0, 3]} >
+   
+      <mesh ref={venRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />
-        <meshPhongMaterial specularMap={specularMap} />
-        
         <meshStandardMaterial
-        map={colorMap}
+          map={colorMap}
           metalness={0.4}
           roughness={0.7}
         />
@@ -54,4 +52,4 @@ import Mercpecularmap from "./textures/mercurybump.jpg"
     </>
   );
 }
-export default Mercury;
+export default Jupiter;

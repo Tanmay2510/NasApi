@@ -3,25 +3,25 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { TextureLoader } from "three";
-import nepmap from "./textures/2k_neptune.jpg";
- function Neptune(props) {
-  const [colorMap] = useLoader(
+import uranMap from "../textures/uranusmap.jpg"
+ function Uranus(props) {
+  const [colorMap ] = useLoader(
     TextureLoader,
-    [nepmap]
+    [uranMap  ]
   );
 
-  const marsRef = useRef();
+  const urRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
-    marsRef.current.rotation.y = elapsedTime / 6;
+    urRef.current.rotation.y = elapsedTime / 6;
   });
 
   return (
     <>
       {/* <ambientLight intensity={1} /> */}
-      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={2.2} />
+      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={0.9} />
       <Stars
         radius={300}
         depth={60}
@@ -31,11 +31,11 @@ import nepmap from "./textures/2k_neptune.jpg";
         fade={true}
       />
     
-      <mesh ref={marsRef} position={[0, 0, 3]} >
+      
+      <mesh ref={urRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />
-        
         <meshStandardMaterial
-        map={colorMap}
+          map={colorMap}
           metalness={0.4}
           roughness={0.7}
         />
@@ -52,4 +52,4 @@ import nepmap from "./textures/2k_neptune.jpg";
     </>
   );
 }
-export default Neptune;
+export default Uranus;

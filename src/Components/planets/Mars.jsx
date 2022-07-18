@@ -1,28 +1,29 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-import * as THREE from "three";
-import Jupitermap from "./textures/8kjupiter.jpg";
+// import * as THREE from "three";
 import { TextureLoader } from "three";
-
- function Jupiter(props) {
-  const [colorMap] = useLoader(
+import Marsmap from "../textures/normalmar.jpg"
+import ColorMap from "../textures/8kmars.jpg"
+import Marspecularmap from "../textures/specmar.jpg"
+ function Mars(props) {
+  const [normalMap,colorMap,specularMap] = useLoader(
     TextureLoader,
-    [Jupitermap]
+    [Marsmap,ColorMap,Marspecularmap]
   );
 
-  const venRef = useRef();
+  const marsRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
-    venRef.current.rotation.y = elapsedTime / 6;
+    marsRef.current.rotation.y = elapsedTime / 6;
   });
 
   return (
     <>
       {/* <ambientLight intensity={1} /> */}
-      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={1.1} />
+      <pointLight color="#f6f3ea" position={[0.2, 0, 5]} intensity={2.2} />
       <Stars
         radius={300}
         depth={60}
@@ -31,11 +32,14 @@ import { TextureLoader } from "three";
         saturation={0}
         fade={true}
       />
-   
-      <mesh ref={venRef} position={[0, 0, 3]} >
+    
+      <mesh ref={marsRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />
+        <meshPhongMaterial specularMap={specularMap} />
+        
         <meshStandardMaterial
-          map={colorMap}
+        map={colorMap}
+          normalMap={normalMap}
           metalness={0.4}
           roughness={0.7}
         />
@@ -52,4 +56,4 @@ import { TextureLoader } from "three";
     </>
   );
 }
-export default Jupiter;
+export default Mars;
