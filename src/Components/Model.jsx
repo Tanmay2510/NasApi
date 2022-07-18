@@ -6,6 +6,9 @@ import  Earth  from "./Earth";
 import Mars from "./Mars";
 import Mercury from "./Mercury";
 import Venus from "./Venus";
+import Jupiter  from './Jupiter';
+import Saturn  from './Saturn';
+import Neptune from './Neptune'
 
 import { browse } from './Carcomp';
 const CanvasContainer = styled.div`
@@ -19,7 +22,7 @@ function Model() {
     <CanvasContainer>
     <Canvas>
       <Suspense fallback={null}>
-        <Venus />
+        <Neptune />
       </Suspense>
     </Canvas>
   </CanvasContainer>
