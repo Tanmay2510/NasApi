@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+.belline{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;  
+    color: black;
+    font-weight: bold;  
+    
+}
+.hh{
+    margin-top: -5px;
+    margin-bottom: 15px;
+    /* height: 1px; */
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%,black));
+
+}
+.forfont{
+    font-family: 'Cormorant Upright', serif;
+    background-color: rgb(208, 164, 230);
+}
+.theh{
+    padding-top: 15px;
+    text-align: left;
+    margin-left: 70px ;
+}
+.contp{
+    margin-right: 55px;
+    margin-left: 70px;
+    text-align: left;
+    font-weight: 600;
+}
+.contp p{
+    font-size: 20px;
+}
+.belp{
+
+    margin-right: 650px;
+}
+.timg{
+
+    width: 90%;
+}

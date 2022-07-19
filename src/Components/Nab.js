@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React from 'react';
+import { useNavigate} from 'react-router-dom';
+
 import "./Nab.css"
 import Theico from '../icon/Theico';
 function Nab() {
@@ -20,8 +22,10 @@ function Nab() {
         fontFamily: 'Gentium Book Plus, serif'
         
       }
-    
-  
+      const navigate = useNavigate();
+      const topage = () =>{
+        navigate("/Offers")
+      }
   return (
     <Navbar className="nav-bg" expand="lg">
     <Container className="forz">
@@ -35,6 +39,8 @@ function Nab() {
           <Nav.Link  
           style={linkstyle}>Planets</Nav.Link>
           <Nav.Link  
+          onClick={topage}
+
           style={linkstyle}>Offers</Nav.Link>
         </Nav>
       </Navbar.Collapse>

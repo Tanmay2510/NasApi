@@ -3,6 +3,7 @@ import Allsection from './Components/Allsection';
 import {Routes, Route} from 'react-router-dom';
 import Basicbg from './Components/Basicbg';
 import Model from './Components/Model';
+import LinkPlanet from './Components/LinkPlanet';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     <Route exact path ="/Saturn" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Uranus" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Neptune" element={      <Basicbg />   }> </Route>
+    <Route exact path ="/Offers" element={      <LinkPlanet />   }> </Route>
+
 
     </Routes>
     </div>
