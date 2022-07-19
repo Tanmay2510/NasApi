@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+.thep{
+    font-family: 'Play', sans-serif;
+    font-size: 100px;
+    color:antiquewhite;
+}
+.ath{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.h{
+    margin-top:-20px;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%,white));
+
+}
+.forbg{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    width:100% ;
+    height: 100vh;
+  background: url("../images/bgmars.jpg")  no-repeat center center fixed; 
+  
+    background-size: cover;
+  
+}

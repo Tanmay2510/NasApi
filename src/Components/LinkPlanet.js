@@ -11,13 +11,6 @@ function LinkPlanet() {
         setData(response.data);
     })
   },[])
-  console.log(data);
-  // console.log(response.data);
-  console.log(data.copyright)
-  console.log(data.date)
-  console.log(data.explanation)
-  console.log(data.title)
-  console.log(data.hdurl)
   return (
     <div>
         <AnotherNav />
@@ -29,7 +22,7 @@ function LinkPlanet() {
         <div className="contp">
         <p> {data ? data.explanation : null }</p>
         </div>  
-     <hr  className="hh"></hr>
+     <hr  className="hhh"></hr>
 
         <div >
         <img className="timg" src = {data ? data.hdurl : null } alt="Theimage"></img>

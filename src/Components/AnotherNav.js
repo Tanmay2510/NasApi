@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Theico from '../icon/Theico';
 import mars from "../icon/mars.png"
 import neptune from "../icon/neptune.png"
@@ -11,6 +12,10 @@ import { Draggable } from 'react-drag-reorder'
 import mercury from "../icon/mercury.png"
 import "./Basicbg.css"
 function AnotherNav() {
+  const navigate = useNavigate();
+  const navv = () => {
+    navigate("/")
+  }
   return (
     <div className='theicons'>
     <Draggable>
@@ -23,7 +28,7 @@ function AnotherNav() {
     <div className='icons'>
     <Theico />
     </div>
-    <h2>NAPP</h2>
+    <h2 onClick={navv}>NAPP</h2>
     </div>
     <Draggable>
     <img src={mars} ></img>
