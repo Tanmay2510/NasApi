@@ -1,7 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./Therover.css"
 function Therover(props) {
-    const style = {
+    const navigate = useNavigate();
+    const nav = () =>{
+        navigate("/Marsphoto")
+    }
+     const style = {
         backgroundImage:"url("+props.imm+")",
         width:"100%",
         height:'100vh',
@@ -13,7 +18,9 @@ function Therover(props) {
     <div style={style}>
     <div className='formarg'>
     <div className='morph'>
-    <h1 className='heh'>{props.nam}</h1>
+    <h1 className='heh' onClick={nav}>{props.nam}</h1>
+    <hr  className="hhhh"></hr>
+
     <div className='part'>
     <div className='partc'>
     <p>Mission Type: {props.t}</p>

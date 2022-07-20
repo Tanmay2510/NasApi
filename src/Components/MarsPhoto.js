@@ -7,14 +7,18 @@ import opp from "../images/opportunity.jpg"
 import cur from "../images/Curiosity.jpg"
 import per from "../images/persev.jpg"
 import Marscard from './Marscard';
+import { useNavigate } from 'react-router-dom';
 function MarsPhoto() {
-
+  const navigate = useNavigate();
+  const nn = () =>{
+    navigate("/");
+  }
   
     
   return (
     <section className="forbg">
     
-    <p className="thep">Mars Photos {<Rocket />}</p>
+    <p className="thep" onClick={nn}>Mars Photos {<Rocket />}</p>
     <hr  className="h"></hr>
 
 <div className="ath">
