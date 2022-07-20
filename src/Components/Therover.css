@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+.morph{
+    margin: 0 auto;
+    width: 80rem;
+    height: 39rem;
+    background: rgba(20, 20, 20, 0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+.formarg{
+    padding-top: 20px;
+    color: antiquewhite;
+
+}
+.heh{
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    margin-top: 5px;
+}
+.part{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.part img{
+    width: 35%;
+    height: 300px;
+    margin-right: -40px;
+}
+.partc{
+    text-align: left;
+    font-family:  'Cormorant',
+    serif;
+    font-size: 29px;
+}
+.bott p{ 
+
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 95px;
+    font-size: 20px;
+    margin-top: 10px;
+    
+ }
+
+ form{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+ }
+ 

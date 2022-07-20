@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Basicbg from './Components/Basicbg';
 import LinkPlanet from './Components/LinkPlanet';
 import MarsPhoto from './Components/MarsPhoto';
+import Rover from './Components/Rover';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
     <Route exact path ="/Uranus" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Neptune" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Offers" element={      <LinkPlanet />   }> </Route>
+    <Route exact path = "/curiosity" element ={<Rover />}></Route>
+    <Route exact path = "/spirit" element ={<Rover />}></Route>
+    <Route exact path = "/opportunity" element ={<Rover />}></Route>
+    <Route exact path = "/perseverance" element ={<Rover />}></Route>
 
 
     </Routes>

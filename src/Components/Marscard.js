@@ -1,15 +1,31 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 import Card from '@mui/material/Card';
 import {motion} from "framer-motion"
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { ThemeProvider, createMuiTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import "./Marscard.css";
+import { useNavigate } from 'react-router-dom';
+export var roverName
 function Marscard(props) {
-  const theme = createMuiTheme({
+    const Navigate = useNavigate();
+  
+ const handlechange= ()=>{
+      roverName="/"+props.but.toLowerCase();
+      Navigate(roverName)
+    }
+    // const ur = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?earth_date=${searchDate}&api_key=${process.env.REACT_APP_API_KEY}`;
+    // const [data,setdata] = useState({});
+    // useEffect(() => {
+    //     axios.get(ur).then((response) => {
+    //         setdata(response.data);
+    //     })
+    // },[])
+  const theme = createTheme({
     typography: {
       fontSize:14,
       fontFamily: [
@@ -38,7 +54,7 @@ function Marscard(props) {
       </CardContent>
     </CardActionArea>
     <CardActions>
-      <Button size="small" color="secondary">
+      <Button size="small" color="secondary" onClick={handlechange} >
         {props.but}
       </Button>
     </CardActions>

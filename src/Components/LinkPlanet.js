@@ -29,7 +29,9 @@ function LinkPlanet() {
         </div>
         <div className="belline">
         <p className="belp">Image Date:{data ? data.date :null}</p>
-        <p>Image Copyright: ©{data ? data.copyright :null} </p>
+      
+        <p>Image Copyright: ©   {data.copyright ?data.copyright:"Unknown"}</p>
+         
         </div>
         </div>
 
