@@ -14,6 +14,7 @@ function Rover() {
             type:"Mars Rover",
             op:"Nasa",
             st: "Active",
+            date:"2011-11-26 to Present",
             ld:"26 November 2011, 15:02 UTC",
             goal:"As established by the Mars Exploration Program, the main scientific goals of the MSL mission are to help determine whether Mars could ever have supported life, as well as determining the role of water, and to study the climate and geology of Mars.The mission results will also help prepare for human exploration"
         }
@@ -25,6 +26,7 @@ function Rover() {
             type:"Mars Rover",
             op:"Nasa",
             st:"Not active",
+            date:"2003-07-8 to 2018-06-10",
             ld:"July 8, 2003, 03:18 UTC",
             goal:"Search for and characterize a variety of rocks and regolith that hold clues to past water activity. In particular, samples sought include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation or hydrothermal activity."
 
@@ -38,7 +40,8 @@ function Rover() {
             type:"Rover",
             op:"Nasa",
             st:"Not active",
-            ld:"June 10, 2003, 1:58:47 p.m. EDT",
+            date:"2003-06-10 to 2010-03-22",
+            ld:"June 10, 2003, 1:58p.m.",
             goal:`Search for and characterize a variety of rocks and soils that hold clues to past water activity. In particular, samples sought will include those that have minerals deposited by water-related processes such as precipitation, evaporation, sedimentary cementation or hydrothermal activity.`
 
 
@@ -50,8 +53,9 @@ function Rover() {
            type:"Mars Rover",
            op:"Nasa",
            st:"Active",
+           date:"2020-07-30 to Present",
            ld:"30 July 2020, 11:50 UTC",
-           goal:`Looking for habitability: identify past environments that were capable of supporting microbial life.          Seeking biosignatures: seek signs of possible past microbial life in those habitable environments, particularly in specific rock types known to preserve signs over time. Caching samples: collect core rock and regolith ("soil") samples and store them on the Martian surface. Preparing for humans: test oxygen production from the Martian atmosphere.`
+           goal:`Looking for habitability: identify past environments that were capable of supporting microbial life.Seeking biosignatures: seek signs of possible past microbial life in those habitable environments, particularly in specific rock types known to preserve signs over time.Preparing for humans: test oxygen production from the Martian atmosphere.`
 
        }
    }
@@ -67,6 +71,7 @@ function Rover() {
     s={obj.st}
     d={obj.ld}
     g={obj.goal}
+    dt = {obj.date}
     />
     </div>
   )

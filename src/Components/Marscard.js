@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Card from '@mui/material/Card';
 import {motion} from "framer-motion"
 import CardContent from '@mui/material/CardContent';
@@ -18,13 +17,7 @@ function Marscard(props) {
       roverName="/"+props.but.toLowerCase();
       Navigate(roverName)
     }
-    // const ur = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?earth_date=${searchDate}&api_key=${process.env.REACT_APP_API_KEY}`;
-    // const [data,setdata] = useState({});
-    // useEffect(() => {
-    //     axios.get(ur).then((response) => {
-    //         setdata(response.data);
-    //     })
-    // },[])
+
   const theme = createTheme({
     typography: {
       fontSize:14,
@@ -36,6 +29,7 @@ function Marscard(props) {
   return (
     <motion.div  whileHover={{scale:1.2,transition: { duration: 0.3}}}>
     <ThemeProvider theme={theme}>
+   
     <Card sx={{ maxWidth: 345 }}  >
     <CardActionArea>
       <CardMedia
@@ -59,9 +53,11 @@ function Marscard(props) {
       </Button>
     </CardActions>
   </Card>
+
   </ThemeProvider>
     
     </motion.div>
+
   )
 }
 
