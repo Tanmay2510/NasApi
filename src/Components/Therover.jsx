@@ -2,7 +2,22 @@ import { useNavigate } from 'react-router-dom'
 import "./Therover.css"
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import Photos from './Photos';
 function Therover(props) {
+
+  function theP(info , index){
+    console.log(index)
+    return (
+
+        <Photos
+        im = {info.img_src}
+        sol = {info.sol}
+        fname={info.full_name}
+        rov={info.rover.status}
+        />
+
+    )
+  }
   const [dat,setdata]=useState({});
   const [isdateenter , setdateenter] = useState(false);
   const [thedate,setthedate] = useState("");
@@ -40,15 +55,10 @@ function Therover(props) {
     <hr  className="hhhh"></hr>
     {
     isdateenter ?
-      <p>{dat.photos ? dat.photos.map((info) =>{
-          return (<div>
-            <p>{info.sol} {info.camera.full_name} {info.rover.status}</p>
-            <p>{info.img_src}</p>
-            </div>
-            )
-      }) 
+       <div>
+       {dat.photos ? dat.photos.map(theP) 
         
-        : null}</p>
+        : null} </div>
     : 
     <>
     
