@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import "slick-carousel/slick/slick.css"; 
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Router } from 'react-router-dom';

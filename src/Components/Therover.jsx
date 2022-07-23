@@ -1,23 +1,22 @@
 import { useNavigate } from 'react-router-dom'
 import "./Therover.css"
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import Photos from './Photos';
+import React, { useState } from 'react'
+import Slider from "react-slick";
+
+
 function Therover(props) {
-
-  function theP(info , index){
-    console.log(index)
-    return (
-
-        <Photos
-        im = {info.img_src}
-        sol = {info.sol}
-        fname={info.full_name}
-        rov={info.rover.status}
-        />
-
-    )
-  }
+  const settings = {
+    infinite: true,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    lazyLoad: true,
+    autoplay: true,
+  autoplaySpeed: 2000,
+   
+  };
+  
   const [dat,setdata]=useState({});
   const [isdateenter , setdateenter] = useState(false);
   const [thedate,setthedate] = useState("");
@@ -34,17 +33,27 @@ function Therover(props) {
         backgroundRepeat:"no-repeat",
 
     }
+    
     const dateset =(event) => {
       if (event.key === 'Enter') {
 
         axios.get(ur).then((response) => {
           setdata(response.data);
-          console.log(ur);
+          console.log(ur)
           setdateenter(true)
         })
       }
     }
-    //img fullname sol status
+   var arr=[];
+   Object.entries(dat).map((ent) => {
+    ent[1].forEach((the) =>{
+      arr.push(the.img_src)
+    })
+})
+var thesrc="";
+
+
+
   return (
     <div style={style}>
     <div className='formarg'>
@@ -56,8 +65,19 @@ function Therover(props) {
     {
     isdateenter ?
        <div>
-       {dat.photos ? dat.photos.map(theP) 
-        
+       {dat.photos ?
+<p>s</p>
+        // {arr.map((sr)=>{
+        //       return(
+        //         <div>
+
+        //         <img src={sr}></img>
+        //       </div>
+        //       )
+           
+
+        //       })}
+
         : null} </div>
     : 
     <>
