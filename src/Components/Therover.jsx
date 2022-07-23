@@ -1,25 +1,19 @@
 import { useNavigate } from 'react-router-dom'
 import "./Therover.css"
 import axios from 'axios'
-import React, { useState } from 'react'
-import Slider from "react-slick";
-
+import React, { useState , useEffect } from 'react'
+import {motion} from 'framer-motion'
+import { BiPlay } from 'react-icons/bi';
+import Notdate from './Notdate'
 
 function Therover(props) {
-  const settings = {
-    infinite: true,
-    dots: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    lazyLoad: true,
-    autoplay: true,
-  autoplaySpeed: 2000,
-   
-  };
+ 
   
   const [dat,setdata]=useState({});
   const [isdateenter , setdateenter] = useState(false);
   const [thedate,setthedate] = useState("");
+const [index, setIndex] = useState(0);
+
     const navigate = useNavigate();
     const nav = () =>{
         navigate("/Marsphoto")
@@ -27,13 +21,13 @@ function Therover(props) {
     const ur = `https://api.nasa.gov/mars-photos/api/v1/rovers/${props.nam}/photos?earth_date=${thedate}&api_key=${process.env.REACT_APP_API_KEY}`;    
     const style = {
         backgroundImage:"url("+props.imm+")",
-        width:"100%",
-        height:'100vh',
+        minHeight:"100vh",
+        height:"auto",
         backgroundSize:"cover",
         backgroundRepeat:"no-repeat",
 
     }
-    
+ 
     const dateset =(event) => {
       if (event.key === 'Enter') {
 
@@ -50,34 +44,54 @@ function Therover(props) {
       arr.push(the.img_src)
     })
 })
-var thesrc="";
+  const next = () => {
+    index<arr.length-1?
+    setIndex((i) => (i + 1) % arr.length):setIndex(0);
+  };
 
-
-
+  const prev = () => {
+    index>0?
+    setIndex((i) => (i - 1) % arr.length):setIndex(arr.length-1);
+  };
+  console.log(index)
+      var totimg = arr.length;
+   
   return (
     <div style={style}>
     <div className='formarg'>
     <div className='morph'>
     <h1 className='heh' onClick={nav}>{props.nam}</h1>
-
-    
     <hr  className="hhhh"></hr>
     {
     isdateenter ?
        <div>
        {dat.photos ?
-<p>s</p>
-        // {arr.map((sr)=>{
-        //       return(
-        //         <div>
-
-        //         <img src={sr}></img>
-        //       </div>
-        //       )
-           
-
-        //       })}
-
+        <div >
+        <div className='ins'>
+        <p>Camera: {dat.photos[index].camera.full_name}</p>
+        </div>
+        <div className='ins'>
+        <p>Total Images:{totimg}   &nbsp;&nbsp;</p>
+        <p>Solar day on Mars:{dat.photos[index].sol}(Sol) &nbsp;&nbsp;</p>
+        <p>Status:{dat.photos[index].rover.status} &nbsp;&nbsp;  </p>
+        </div>
+       
+     
+        <img src={arr[index]} alt="rovPhotos" className='rovph' />
+        <motion.button   whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.2 },
+        }}onClick={prev} className="but">&lt;</motion.button>
+        <motion.button   whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.2 },
+        }} className="but">{<BiPlay />}</motion.button>
+        
+        <motion.button   whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.2 },
+        }}onClick={next} className="but">&gt;</motion.button>
+           </div>
         : null} </div>
     : 
     <>
