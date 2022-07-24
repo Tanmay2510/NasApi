@@ -17,6 +17,11 @@
     color: antiquewhite;
 
 }
+.th4 {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
 .ins {
     display: flex;
     justify-content: center;

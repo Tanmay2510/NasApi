@@ -5,6 +5,7 @@ import Basicbg from './Components/Basicbg';
 import LinkPlanet from './Components/LinkPlanet';
 import MarsPhoto from './Components/MarsPhoto';
 import Rover from './Components/Rover';
+import WHAT from "./Components/WHAT";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
     <Route exact path = "/spirit" element ={<Rover />}></Route>
     <Route exact path = "/opportunity" element ={<Rover />}></Route>
     <Route exact path = "/perseverance" element ={<Rover />}></Route>
+    <Route exact path = "/WHAT" element ={<WHAT />}></Route>
 
     </Routes>
     </div>

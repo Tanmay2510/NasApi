@@ -4,7 +4,6 @@ import axios from 'axios'
 import React, { useState , useEffect } from 'react'
 import {motion} from 'framer-motion'
 import { BiPlay } from 'react-icons/bi';
-import Notdate from './Notdate'
 
 function Therover(props) {
  
@@ -33,8 +32,12 @@ const [index, setIndex] = useState(0);
 
         axios.get(ur).then((response) => {
           setdata(response.data);
-          console.log(ur)
+          console.log(response.data.photos.length)
+          if(response.data.photos.length === 0){
+              navigate("/WHAT")
+            }
           setdateenter(true)
+        
         })
       }
     }
@@ -44,6 +47,7 @@ const [index, setIndex] = useState(0);
       arr.push(the.img_src)
     })
 })
+
   const next = () => {
     index<arr.length-1?
     setIndex((i) => (i + 1) % arr.length):setIndex(0);
@@ -53,10 +57,9 @@ const [index, setIndex] = useState(0);
     index>0?
     setIndex((i) => (i - 1) % arr.length):setIndex(arr.length-1);
   };
-  console.log(index)
       var totimg = arr.length;
-   
-  return (
+     
+      return (
     <div style={style}>
     <div className='formarg'>
     <div className='morph'>
@@ -66,7 +69,7 @@ const [index, setIndex] = useState(0);
     isdateenter ?
        <div>
        {dat.photos ?
-        <div >
+        <div  >
         <div className='ins'>
         <p>Camera: {dat.photos[index].camera.full_name}</p>
         </div>
@@ -78,19 +81,18 @@ const [index, setIndex] = useState(0);
        
      
         <img src={arr[index]} alt="rovPhotos" className='rovph' />
+        <div className='th4'>
         <motion.button   whileHover={{
           scale: 1.1,
           transition: { duration: 0.2 },
         }}onClick={prev} className="but">&lt;</motion.button>
-        <motion.button   whileHover={{
-          scale: 1.1,
-          transition: { duration: 0.2 },
-        }} className="but">{<BiPlay />}</motion.button>
+          <h4>{index+1}/{totimg}</h4>
         
         <motion.button   whileHover={{
           scale: 1.1,
           transition: { duration: 0.2 },
         }}onClick={next} className="but">&gt;</motion.button>
+           </div>
            </div>
         : null} </div>
     : 
