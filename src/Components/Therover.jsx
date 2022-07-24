@@ -3,7 +3,7 @@ import "./Therover.css"
 import axios from 'axios'
 import React, { useState , useEffect } from 'react'
 import {motion} from 'framer-motion'
-import { BiPlay } from 'react-icons/bi';
+import {FaPlay, FaPause} from 'react-icons/fa';
 
 function Therover(props) {
  
@@ -12,6 +12,7 @@ function Therover(props) {
   const [isdateenter , setdateenter] = useState(false);
   const [thedate,setthedate] = useState("");
 const [index, setIndex] = useState(0);
+const [playSlide, setPlaySlide] = useState(false);
 
     const navigate = useNavigate();
     const nav = () =>{
@@ -48,6 +49,7 @@ const [index, setIndex] = useState(0);
     })
 })
 
+
   const next = () => {
     index<arr.length-1?
     setIndex((i) => (i + 1) % arr.length):setIndex(0);
@@ -58,7 +60,15 @@ const [index, setIndex] = useState(0);
     setIndex((i) => (i - 1) % arr.length):setIndex(arr.length-1);
   };
       var totimg = arr.length;
-     
+      useEffect(() => {
+        if(playSlide){
+
+        const handleAutoplay = setInterval(next, 3000);
+        return () => clearInterval(handleAutoplay);
+      }
+
+      }, [next]);
+      
       return (
     <div style={style}>
     <div className='formarg'>
@@ -77,17 +87,23 @@ const [index, setIndex] = useState(0);
         <p>Total Images:{totimg}   &nbsp;&nbsp;</p>
         <p>Solar day on Mars:{dat.photos[index].sol}(Sol) &nbsp;&nbsp;</p>
         <p>Status:{dat.photos[index].rover.status} &nbsp;&nbsp;  </p>
+
         </div>
-       
-     
+      
+        <h5>{index+1}/{totimg}</h5>
         <img src={arr[index]} alt="rovPhotos" className='rovph' />
         <div className='th4'>
         <motion.button   whileHover={{
           scale: 1.1,
           transition: { duration: 0.2 },
         }}onClick={prev} className="but">&lt;</motion.button>
-          <h4>{index+1}/{totimg}</h4>
-        
+          {playSlide
+            ?
+            <FaPause className="fa-icon ii"  size={20} onClick={()=>setPlaySlide(!playSlide)}/>
+            :
+            <FaPlay className="fa-icon ii"  size={20} onClick={()=>setPlaySlide(!playSlide)}/>
+
+        }
         <motion.button   whileHover={{
           scale: 1.1,
           transition: { duration: 0.2 },

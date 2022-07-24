@@ -11,16 +11,20 @@
     border-radius: 10px;
     backdrop-filter: blur(2px);
 }
+
 .formarg{
     padding-bottom: 20px;
     padding-top: 20px;
     color: antiquewhite;
 
 }
+.ii{
+    margin-top: 20px;
+    cursor:pointer;
+}
 .th4 {
     display: flex;
     justify-content: center;
-    align-items:baseline;
 }
 .ins {
     display: flex;
