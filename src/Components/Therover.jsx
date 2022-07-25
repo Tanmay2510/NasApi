@@ -79,7 +79,7 @@ const [playSlide, setPlaySlide] = useState(false);
     isdateenter ?
        <div>
        {dat.photos ?
-        <div  >
+        <div>
         <div className='ins'>
         <p>Camera: {dat.photos[index].camera.full_name}</p>
         </div>
@@ -87,10 +87,8 @@ const [playSlide, setPlaySlide] = useState(false);
         <p>Total Images:{totimg}   &nbsp;&nbsp;</p>
         <p>Solar day on Mars:{dat.photos[index].sol}(Sol) &nbsp;&nbsp;</p>
         <p>Status:{dat.photos[index].rover.status} &nbsp;&nbsp;  </p>
-
         </div>
-      
-        <h5>{index+1}/{totimg}</h5>
+              <h5>{index+1}/{totimg}</h5>
         <img src={arr[index]} alt="rovPhotos" className='rovph' />
         <div className='th4'>
         <motion.button   whileHover={{
@@ -102,7 +100,6 @@ const [playSlide, setPlaySlide] = useState(false);
             <FaPause className="fa-icon ii"  size={20} onClick={()=>setPlaySlide(!playSlide)}/>
             :
             <FaPlay className="fa-icon ii"  size={20} onClick={()=>setPlaySlide(!playSlide)}/>
-
         }
         <motion.button   whileHover={{
           scale: 1.1,
@@ -113,7 +110,6 @@ const [playSlide, setPlaySlide] = useState(false);
         : null} </div>
     : 
     <>
-    
     <div className='part'>
                 <div className='partc'>
                   <p>Mission Type: {props.t}</p>
@@ -121,9 +117,7 @@ const [playSlide, setPlaySlide] = useState(false);
                   <p>Status: {props.s}</p>
                   <p>Launching date: {props.d}</p>
                   {props.l ? <p>Last contact: {props.l}</p> : null}
-
                 </div>
-
                 <img src={props.imm}></img>
               </div>
               <div className="bott">
@@ -139,15 +133,9 @@ const [playSlide, setPlaySlide] = useState(false);
                   onChange={event => setthedate(event.target.value)}
                   onKeyPress={dateset}
                   type="text" />
-          
-    
     </div>
-    </div>
-    
-    
-    
+    </div>   
     </div>
   )
 }
-
 export default Therover

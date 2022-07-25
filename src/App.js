@@ -6,6 +6,7 @@ import LinkPlanet from './Components/LinkPlanet';
 import MarsPhoto from './Components/MarsPhoto';
 import Rover from './Components/Rover';
 import WHAT from "./Components/WHAT";
+import Nav from './Components/Nav';
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,7 @@ function App() {
     <Route exact path = "/opportunity" element ={<Rover />}></Route>
     <Route exact path = "/perseverance" element ={<Rover />}></Route>
     <Route exact path = "/WHAT" element ={<WHAT />}></Route>
-
+    <Route exact path ="/Planets" element={ <Nav />}></Route>
     </Routes>
     </div>
   );

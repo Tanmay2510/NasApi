@@ -25,6 +25,9 @@ function Nab() {
       const navigate = useNavigate();
       const topage = () =>{
         navigate("/Offers")
+      } 
+       const toNav = () =>{
+        navigate("/Planets")
       }
   return (
     <Navbar className="nav-bg" expand="lg">
@@ -37,9 +40,11 @@ function Nab() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" style={{ marginTop:'5px',marginRight:'-30px'}} >
           <Nav.Link  
-          style={linkstyle}>Planets</Nav.Link>
-          <Nav.Link  
+          style={linkstyle}
           onClick={topage}
+          >Planets</Nav.Link>
+          <Nav.Link  
+          onClick={toNav}
 
           style={linkstyle}>Offers</Nav.Link>
         </Nav>
