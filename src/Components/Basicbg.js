@@ -1,5 +1,5 @@
 import React from "react";
-
+import {motion} from "framer-motion"
 import "./Basicbg.css"
 import Model from "./Model";
 import { browse } from './Carcomp';
@@ -41,11 +41,13 @@ function Basicbg() {
      <hr  className="hh"></hr>
 
      <div className="themid">
-     <div className="content">
+     <motion.div initial={{opacity:0}}
+     animate={{opacity:1}}
+     transition={{duration:0.4}}className="content">
 <p>
       <h2>{hh}:</h2>
       <br></br>{cc}</p>
-      </div>
+      </motion.div>
      
       <Model />
      

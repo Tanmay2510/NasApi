@@ -10,7 +10,6 @@ import saturnn from "../images/saturnn.png"
 import uranuss from "../images/uranuss.png"
 import neptunee from "../images/neptunee.png"
 import Carousel from 'react-bootstrap/Carousel';
-// import { i } from "./Carcomp"
 function Thecar() {
   const stt={
     marginRight:"10px",

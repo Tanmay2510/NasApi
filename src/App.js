@@ -22,13 +22,13 @@ function App() {
     <Route exact path ="/Saturn" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Uranus" element={      <Basicbg />   }> </Route>
     <Route exact path ="/Neptune" element={      <Basicbg />   }> </Route>
-    <Route exact path ="/Offers" element={      <LinkPlanet />   }> </Route>
+    <Route exact path ="/APOD" element={      <LinkPlanet />   }> </Route>
     <Route exact path = "/curiosity" element ={<Rover />}></Route>
     <Route exact path = "/spirit" element ={<Rover />}></Route>
     <Route exact path = "/opportunity" element ={<Rover />}></Route>
     <Route exact path = "/perseverance" element ={<Rover />}></Route>
     <Route exact path = "/WHAT" element ={<WHAT />}></Route>
-    <Route exact path ="/Planets" element={ <Nav />}></Route>
+    <Route exact path ="/Offers" element={ <Nav />}></Route>
     </Routes>
     </div>
   );

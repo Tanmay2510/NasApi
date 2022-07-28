@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import AnotherNav from './AnotherNav'
 import "./LinkPlanet.css"
-
+import {motion} from "framer-motion"
 function LinkPlanet() {
   const apod = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`;
   const [data,setData] = useState({});
@@ -15,13 +15,17 @@ function LinkPlanet() {
     <div>
         <AnotherNav />
 
-        <div className="forfont">
-        <div className="theh">
+        <div  className="forfont">
+        <motion.div initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}}className="theh">
         <h1>Name: {data ? data.title :null}</h1>
-        </div>
-        <div className="contp">
+        </motion.div>
+        <motion.div initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}} className="contp">
         <p> {data ? data.explanation : null }</p>
-        </div>  
+        </motion.div>  
      <hr  className="hhh"></hr>
 
         <div >

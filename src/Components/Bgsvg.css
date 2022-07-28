@@ -1,0 +1,11 @@
+.v{
+    z-index: 0;
+    margin-top: -600px;
+}
+.v:hover{
+    height: 510px;
+    width: 510px;
+    stroke: rgb(219, 17, 219);
+    stroke-width: 5px;
+    filter:blur(9px);
+}
