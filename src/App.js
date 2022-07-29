@@ -7,6 +7,7 @@ import MarsPhoto from './Components/MarsPhoto';
 import Rover from './Components/Rover';
 import WHAT from "./Components/WHAT";
 import Nav from './Components/Nav';
+import NEOW from './Components/NEOW';
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
     <Route exact path = "/perseverance" element ={<Rover />}></Route>
     <Route exact path = "/WHAT" element ={<WHAT />}></Route>
     <Route exact path ="/Offers" element={ <Nav />}></Route>
+    <Route exact path = "/NEOW" element ={<NEOW />}></Route>
     </Routes>
     </div>
   );

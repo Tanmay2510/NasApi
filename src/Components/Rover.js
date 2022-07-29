@@ -5,6 +5,7 @@ import cu from "../images/Curiosity.jpg"
 import op from "../images/opportunity.jpg"
 import sr from "../images/spiritRover.jpg"
 import pr from "../images/persev.jpg"
+import {motion} from "framer-motion"
 function Rover() {
     var obj = {};
     if(roverName==="/curiosity"){
@@ -61,7 +62,10 @@ function Rover() {
    }
 
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.5}}>
     <Therover 
     nam = {obj.nam}
     imm = {obj.imag}
@@ -73,7 +77,7 @@ function Rover() {
     g={obj.goal}
     dt = {obj.date}
     />
-    </div>
+    </motion.div>
   )
 }
 

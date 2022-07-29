@@ -12,7 +12,10 @@ function LinkPlanet() {
     })
   },[])
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}}>
         <AnotherNav />
 
         <div  className="forfont">
@@ -39,7 +42,7 @@ function LinkPlanet() {
         </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

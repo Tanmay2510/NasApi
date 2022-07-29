@@ -70,14 +70,21 @@ const [playSlide, setPlaySlide] = useState(false);
       }, [next]);
       
       return (
-    <div style={style}>
-    <div className='formarg'>
+    <div   style={style}>
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.5}}className='formarg'>
     <div className='morph'>
     <h1 className='heh' onClick={nav}>{props.nam}</h1>
     <hr  className="hhhh"></hr>
     {
     isdateenter ?
-       <div>
+       <motion.div
+       initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.5}}
+       >
        {dat.photos ?
         <div>
         <div className='ins'>
@@ -107,9 +114,10 @@ const [playSlide, setPlaySlide] = useState(false);
         }}onClick={next} className="but">&gt;</motion.button>
            </div>
            </div>
-        : null} </div>
+        : null} </motion.div>
     : 
-    <>
+    <div>
+
     <div className='part'>
                 <div className='partc'>
                   <p>Mission Type: {props.t}</p>
@@ -123,7 +131,7 @@ const [playSlide, setPlaySlide] = useState(false);
               <div className="bott">
                   <p>Objective: {props.g}</p>
                 </div>
-                </> 
+                </div>
               }
                 <p className='fo'>For Rover Photos(Enter Date between {props.dt})</p><input
                   defaultValue=""
@@ -132,9 +140,9 @@ const [playSlide, setPlaySlide] = useState(false);
                   value={thedate} //final res of the user text
                   onChange={event => setthedate(event.target.value)}
                   onKeyPress={dateset}
-                  type="text" />
+                  type="text" />            
     </div>
-    </div>   
+    </motion.div>   
     </div>
   )
 }

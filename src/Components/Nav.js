@@ -6,12 +6,16 @@ import Navcard from './Navcard.js';
 import mar from "../images/navmars.jpg"
 import pod from "../images/navapod.jpg"
 import neow from "../images/navneow.jpg"
+import {motion } from "framer-motion"
 function Nav() {
 
   const astp="Data for near-earth Asteroid information. You can: search for Asteroids based on their closest approach date to Earth, and look up a specific Asteroid with its NASA JPL.";
   const marp="Get access to photos from the rover that are present on mars.Rovers help scientists in their quest to understand what different parts of the planet are made of."; 
   return (
-    <div className='ob'>
+    <motion.div
+    initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}} className='ob'>
     <AnotherNav />
       <div className="bggg b" >
 
@@ -53,7 +57,7 @@ function Nav() {
       </div>
      <Bgsvg />
      <Bgsvg />
-    </div>
+    </motion.div>
   )
 }
 

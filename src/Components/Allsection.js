@@ -4,10 +4,13 @@ import Nab from './Nab';
 import Thecar from './Thecar';
 import './Allsection.css';
 import Bott from './Bott';
+import {motion} from 'framer-motion'
 function Allsection() {
-  //to the bot add icon  in the middle and  planets around them 
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}}>
     <section className="top">
     <Nab />
     <Halftop />
@@ -18,7 +21,7 @@ function Allsection() {
     <section className='bot'>
     <Bott />
     </section>
-    </div>
+    </motion.div>
 
   )
 }

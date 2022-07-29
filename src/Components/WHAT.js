@@ -6,7 +6,10 @@ function Notdate() {
   const [isActive, setIsActive] =useState(false);
 
   return (
-    <div className='forfl'>
+    <motion.div 
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.5}}className='forfl'>
     <div className='what'>
     <p>NO PHOTOS!!!</p>
     <p>GO Back</p>
@@ -21,7 +24,7 @@ function Notdate() {
     
     <a href="/Marsphoto" className='lin'>Back to rovers</a>
     </div>
-    </div>
+    </motion.div>
 
   )
 }
