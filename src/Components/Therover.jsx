@@ -133,7 +133,8 @@ const [playSlide, setPlaySlide] = useState(false);
                 </div>
                 </div>
               }
-                <p className='fo'>For Rover Photos(Enter Date between {props.dt})</p><input
+                <p className='fo'>For Rover Photos(Enter Date between {props.dt})</p>
+                <input
                   defaultValue=""
                   placeholder="YYYY-MM-DD"
                   className="inp"
