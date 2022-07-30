@@ -3,3 +3,4 @@ map(cloud) = cloudsMap -> meshPhongMaterial
 specularMap(country black) = specularMap -> meshPhongMaterial
 map(pure )=colormap->meshStandardMaterial
 normalMap(blue or plain color) = normalMap ->meshStandardMaterial
+add flip card anime to cards for navcard component
