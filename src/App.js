@@ -7,8 +7,6 @@ import MarsPhoto from './Components/MarsPhoto';
 import Rover from './Components/Rover';
 import WHAT from "./Components/WHAT";
 import Nav from './Components/Nav';
-// import NEOW from './Components/NEOW';
-// import Forscene from './Components/Forscene';
 import NEOW from './Components/NEOW';
 
 function App() {

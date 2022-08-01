@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
+import AnotherNav from './AnotherNav';
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
     const [issubmit,setissubmit] = useState(false);
-    console.log(nowdate)
     const ur = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${nowdate}&end_date=${nowdate}&api_key=${process.env.REACT_APP_API_KEY}`
     
     const datset = (event)=>{
@@ -24,6 +24,7 @@ function NEOW() {
       }
     return (
     <div className='cont'>
+    <AnotherNav />
     <motion.div
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -41,6 +42,7 @@ function NEOW() {
         }
     </motion.div>
     </div>
+
 
   )
 }
