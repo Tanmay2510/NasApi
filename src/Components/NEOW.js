@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
-import AnotherNav from './AnotherNav';
+import NEowcard from './NEowcard'
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
@@ -18,13 +18,16 @@ function NEOW() {
     })
 }
 } 
-
+      var len = data.element_count;
+      
+      // near_earth_objects[nowdate][i].close_approach_data[0].close_approach_date
+      // near_earth_objects[nowdate][i].name
+      // near_earth_objects[nowdate][i].absolute_magnitude_h
       function handlee(e){
         setnowdate(e.target.value);       
       }
     return (
     <div className='cont'>
-    <AnotherNav />
     <motion.div
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -32,7 +35,12 @@ function NEOW() {
         className="neo">
         {
             issubmit ?
-            <h1>HII</h1>
+            <div>
+            
+           <NEowcard />
+
+           </div>
+
             :
             <div>
             <h1>Get information about Near Earth Objects(NEO) </h1>
