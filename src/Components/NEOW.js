@@ -19,7 +19,7 @@ function NEOW() {
     })
 }
 } 
-      var len = data.element_count;
+      // var len = data.element_count;
       
       // near_earth_objects[nowdate].close_approach_data[0].close_approach_date
       // near_earth_objects[nowdate].name
@@ -27,12 +27,21 @@ function NEOW() {
       function handlee(e){
         setnowdate(e.target.value);       
       }
-      var ans2;
-        var ans = data.near_earth_objects;
-        Object.entries(ans).map((ent) => {
-           ans2 = ent[1];
-      })
-      console.log(ans2)
+      var a;
+      var a2;
+      if(nowdate){
+          console.log(nowdate)
+      Object.entries(data).map((ent) => {
+         a = ent[1];
+        })
+        Object.entries(a).map((e)=>{
+          a2=e[1];
+        })
+      }
+      console.log(a2);
+      
+      
+        
       return (
     <div className='cont'>
     <motion.div
