@@ -24,12 +24,10 @@
     padding:.5em 1.5em;
     text-align: center;
     
-    border: rgb(0, 0, 0) 1px solid; 
+    border: rgb(231, 91, 208) 1px solid; 
     background-color:rgba(131, 128, 128, 0.144);
 }
-::placeholder{
-    color: black;
-}
+
 .neo p{
     font-size: 1.9em;
 }

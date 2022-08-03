@@ -3,6 +3,8 @@ import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
 import NEowcard from './NEowcard'
+import Grid from '@mui/material/Grid';
+
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
@@ -12,7 +14,6 @@ function NEOW() {
     const datset = (event)=>{
         if(event.key === "Enter"){
         axios.get(ur).then((response)=>{
-        console.log(response.data);
         setdata(response.data);
         setissubmit(true);
     })
@@ -20,13 +21,19 @@ function NEOW() {
 } 
       var len = data.element_count;
       
-      // near_earth_objects[nowdate][i].close_approach_data[0].close_approach_date
-      // near_earth_objects[nowdate][i].name
-      // near_earth_objects[nowdate][i].absolute_magnitude_h
+      // near_earth_objects[nowdate].close_approach_data[0].close_approach_date
+      // near_earth_objects[nowdate].name
+      // near_earth_objects[nowdate].absolute_magnitude_h
       function handlee(e){
         setnowdate(e.target.value);       
       }
-    return (
+      var ans2;
+        var ans = data.near_earth_objects;
+        Object.entries(ans).map((ent) => {
+           ans2 = ent[1];
+      })
+      console.log(ans2)
+      return (
     <div className='cont'>
     <motion.div
         initial={{opacity:0}}
@@ -37,7 +44,14 @@ function NEOW() {
             issubmit ?
             <div>
             
-           <NEowcard />
+            <Grid container rowSpacing  = {2} spacing={{ xs: 2, md: 1}} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid item xs={3}>
+          {
+           
+          }
+        </Grid>
+    
+    </Grid>
 
            </div>
 
