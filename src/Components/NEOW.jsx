@@ -3,45 +3,50 @@ import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
 import NEowcard from './NEowcard'
-import Grid from '@mui/material/Grid';
-
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
     const [issubmit,setissubmit] = useState(false);
     const ur = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${nowdate}&end_date=${nowdate}&api_key=${process.env.REACT_APP_API_KEY}`
-    
     const datset = (event)=>{
         if(event.key === "Enter"){
         axios.get(ur).then((response)=>{
         setdata(response.data);
         setissubmit(true);
-    })
-}
-} 
-      // var len = data.element_count;
-      
-      // near_earth_objects[nowdate].close_approach_data[0].close_approach_date
-      // near_earth_objects[nowdate].name
-      // near_earth_objects[nowdate].absolute_magnitude_h
+    })}}
       function handlee(e){
         setnowdate(e.target.value);       
       }
       var a;
       var a2;
+      var obj;
+      var arr=[];
       if(nowdate){
-          console.log(nowdate)
       Object.entries(data).map((ent) => {
          a = ent[1];
         })
+        if(a){
         Object.entries(a).map((e)=>{
           a2=e[1];
         })
+        if(a2){
+
+        a2.forEach((info)=>{
+          obj={
+              name : info.name,
+              abmg :info.absolute_magnitude_h,
+              mink: info.estimated_diameter.kilometers.estimated_diameter_min,
+              isph:info.is_potentially_hazardous_asteroid,
+              clapdt: info.close_approach_data[0].close_approach_date_full,
+              clrelvel: info.close_approach_data[0].relative_velocity.kilometers_per_hour,
+              misdis: info.close_approach_data[0].miss_distance.kilometers,
+              orbeth: info.close_approach_data[0].orbiting_body
+          }
+          arr.push(obj);
+        })
+        }
+        }
       }
-      console.log(a2);
-      
-      
-        
       return (
     <div className='cont'>
     <motion.div
@@ -51,19 +56,17 @@ function NEOW() {
         className="neo">
         {
             issubmit ?
-            <div>
-            
-            <Grid container rowSpacing  = {2} spacing={{ xs: 2, md: 1}} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={3}>
+            <div>   
           {
-           
-          }
-        </Grid>
-    
-    </Grid>
-
-           </div>
-
+            <div>
+            {
+              arr.map((i)=>{
+                <p>{i.name}</p>
+              })
+            }            
+            </div>
+            }
+            </div>
             :
             <div>
             <h1>Get information about Near Earth Objects(NEO) </h1>
@@ -73,9 +76,18 @@ function NEOW() {
         }
     </motion.div>
     </div>
-
-
   )
 }
-
 export default NEOW
+
+
+// <NEowcard 
+// nn = {i.name}
+// aa ={i.abmg}
+// cc = {i.clapdt}
+// cl={i.clrelvel}
+// ii={i.isph}
+// mm={i.misdis}
+// oo={i.orbeth}
+// md={i.misdis}
+// />
