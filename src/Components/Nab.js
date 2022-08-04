@@ -16,11 +16,13 @@ function Nab() {
     }
     const linkstyle=
       {
-        color:'white',
-        marginRight:'70px',
-        fontSize:'20px',
-        fontFamily: 'Gentium Book Plus, serif'
         
+          color:'white',
+          marginRight:'70px',
+          fontSize:'20px',
+          fontFamily: 'Gentium Book Plus, serif'
+          
+      
       }
       const navigate = useNavigate();
      
@@ -38,12 +40,12 @@ function Nab() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" style={{ marginTop:'5px',marginRight:'-30px'}} >
           <Nav.Link  
-          style={linkstyle}
+          className="hov" style={linkstyle}
           >Planets</Nav.Link>
           <Nav.Link  
           onClick={toNav}
 
-          style={linkstyle}>Offers</Nav.Link>
+          className="hov" style={linkstyle}>Offers</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

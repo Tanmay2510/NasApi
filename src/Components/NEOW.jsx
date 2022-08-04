@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
+import { Grid } from '@mui/material'
+import AnotherNav from "./AnotherNav"
 import NEowcard from './NEowcard'
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
@@ -17,6 +19,7 @@ function NEOW() {
       function handlee(e){
         setnowdate(e.target.value);       
       }
+
       var a;
       var a2;
       var obj;
@@ -47,8 +50,23 @@ function NEOW() {
         }
         }
       }
+      function createcard(emo){
+        return(
+            <NEowcard
+            name={emo.name}
+            ab={emo.abmg}
+            mi={emo.mink}
+            is={emo.isph}
+            cl={emo.clapdt}
+            cr={emo.clrelvel}
+            ms={emo.misdis}
+            or={emo.orbeth}
+            />
+        )
+      }
       return (
     <div className='cont'>
+    <AnotherNav />
     <motion.div
         initial={{opacity:0}}
         animate={{opacity:1}}
@@ -58,19 +76,20 @@ function NEOW() {
             issubmit ?
             <div>   
           {
-            <div>
+            <div className="ca">
+         
             {
-              arr.map((i)=>{
-                <p>{i.name}</p>
-              })
-            }            
+              arr.map(createcard)
+            }   
+      
+
             </div>
             }
             </div>
             :
-            <div>
+            <div className="imbg">
             <h1>Get information about Near Earth Objects(NEO) </h1>
-            <p>Enter Date</p>
+            <p style={{fontSize:'1.9em'}}>Enter Date</p>
             <input type="text" className="in" placeholder="YYYY-MM-DD" onChange={handlee}  onKeyPress={datset}></input>
             </div>
         }

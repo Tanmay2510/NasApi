@@ -8,6 +8,10 @@
     font-size: 20px;
 }
 
+.hov:hover{
+    background-color: rgba(228, 117, 228, 0.76);
+}
+
 .forz{
     z-index: 1;
 }

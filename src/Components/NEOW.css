@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
-.cont{
+.imbg{
+    color:wheat;
+    padding-top: 15%;
+    /* min-height: 100vh; */
+    height: 86.5vh;
     background-image: url("../images/stk.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    height: auto;
-    width: auto;
 }
-
+.imbg p{
+    color:wheat;
+}
 .neo{
-    position: absolute;
-    top: 13%;
-    left:50%;
-    transform: translate(-50%, 90%);
-    font-family: 'Exo', sans-serif;
-    
+    width: 100%;
+    font-family: 'Exo', sans-serif; 
 }
-
-
 .in{
     border-radius:50px ;
     padding:.5em 1.5em;
-    text-align: center;
-    
-    border: rgb(231, 91, 208) 1px solid; 
+    text-align: center;  
+    color: wheat; 
+    border: hidden;
     background-color:rgba(131, 128, 128, 0.144);
 }
-
-.neo p{
-    font-size: 1.9em;
+.ca{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
+    grid-gap: 50px;
+    grid-row-gap: 90px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
 }
+
 .in:hover{
     cursor: pointer;
-    transform: translate(2px);
+    transform: translate(4px);
+    transition:transform 0.3s ease-in-out;
     background-color: rgba(16,18,27,0.4);
-    border-color: rgb(243, 74, 235);
 }
 
 
