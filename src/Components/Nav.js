@@ -7,6 +7,7 @@ import mar from "../images/navmars.jpg"
 import pod from "../images/navapod.jpg"
 import neow from "../images/navneow.jpg"
 import {motion } from "framer-motion"
+import Lowernav from './Lowernav.js';
 function Nav() {
 
   const astp="Data for near-earth Asteroid information. You can: search for Asteroids based on their closest approach date to Earth, and look up a specific Asteroid with its NASA JPL.";
@@ -57,6 +58,10 @@ function Nav() {
       </div>
      <Bgsvg />
      <Bgsvg />
+     <div style={{marginTop:"-40px"}}>
+     <Lowernav />
+     </div>
+
     </motion.div>
   )
 }

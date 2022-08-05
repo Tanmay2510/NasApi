@@ -10,6 +10,8 @@ import saturnn from "../images/saturnn.png"
 import uranuss from "../images/uranuss.png"
 import neptunee from "../images/neptunee.png"
 import Carousel from 'react-bootstrap/Carousel';
+import Lowernav from "./Lowernav";
+
 function Thecar() {
   const stt={
     marginRight:"10px",
@@ -49,7 +51,7 @@ function Thecar() {
   const mrc=`The red planet Mars, named for the Roman god of war, has long been an omen in the night sky. And in its own way, the planet’s rusty red surface tells a story of destruction. Billions of years ago, the fourth planet from the sun could have been mistaken for Earth’s smaller twin,
    with liquid water on its surface—and maybe even life.Mars rotates on its axis every 24.6 Earth hours, defining the length of a Martian day, which is called a sol (short for “solar day”).`
   return (
-    <div className='cara'>
+    <div className='cara' id="here">
     
       <h1 className='thepl'> The Planets</h1>
       
@@ -155,7 +157,7 @@ function Thecar() {
      </Carousel.Item>
 
      </Carousel>
-
+   
      
 
     </div>

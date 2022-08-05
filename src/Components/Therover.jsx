@@ -4,6 +4,7 @@ import axios from 'axios'
 import React, { useState , useEffect } from 'react'
 import {motion} from 'framer-motion'
 import {FaPlay, FaPause} from 'react-icons/fa';
+import Lowernav from './Lowernav'
 
 function Therover(props) {
  
@@ -141,8 +142,11 @@ const [playSlide, setPlaySlide] = useState(false);
                   value={thedate} //final res of the user text
                   onChange={event => setthedate(event.target.value)}
                   onKeyPress={dateset}
-                  type="text" />            
+                  type="text" />   
+    <Lowernav />
+
     </div>
+
     </motion.div>   
     </div>
   )

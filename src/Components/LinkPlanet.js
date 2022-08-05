@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import AnotherNav from './AnotherNav'
 import "./LinkPlanet.css"
 import {motion} from "framer-motion"
+import Lowernav from './Lowernav'
 function LinkPlanet() {
   const apod = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`;
   const [data,setData] = useState({});
@@ -40,8 +41,13 @@ function LinkPlanet() {
         <p>Image Copyright: ©   {data.copyright ?data.copyright:"NASA"}</p>
          
         </div>
-        </div>
+        <div style={{marginTop:"-10px"}}>
 
+<Lowernav />
+</div>
+
+
+        </div>
     </motion.div>
   )
 }

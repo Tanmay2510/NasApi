@@ -40,6 +40,7 @@ function Nab() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto" style={{ marginTop:'5px',marginRight:'-30px'}} >
           <Nav.Link  
+          href="#here"
           className="hov" style={linkstyle}
           >Planets</Nav.Link>
           <Nav.Link  

@@ -8,6 +8,7 @@ import per from "../images/persev.jpg"
 import Marscard from './Marscard';
 import {motion} from "framer-motion"
 import { useNavigate } from 'react-router-dom';
+import Lowernav from './Lowernav';
 function MarsPhoto() {
   const navigate = useNavigate();
   const nn = () =>{
@@ -55,8 +56,11 @@ function MarsPhoto() {
   but="Perseverance"
   titl="Perseverance Rover"
   />
- 
 </div>
+<div style={{marginTop:"80px"}}>
+<Lowernav />
+</div>
+
 </motion.section>
     
     

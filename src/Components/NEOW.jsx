@@ -5,6 +5,7 @@ import "./NEOW.css"
 import { Grid } from '@mui/material'
 import AnotherNav from "./AnotherNav"
 import NEowcard from './NEowcard'
+import Lowernav from './Lowernav'
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
@@ -43,15 +44,19 @@ function NEOW() {
               clapdt: info.close_approach_data[0].close_approach_date_full,
               clrelvel: info.close_approach_data[0].relative_velocity.kilometers_per_hour,
               misdis: info.close_approach_data[0].miss_distance.kilometers,
-              orbeth: info.close_approach_data[0].orbiting_body
+              orbeth: info.close_approach_data[0].orbiting_body,
           }
+          
+          // near_earth_objects['2020-10-10'][2].is_sentry_object
           arr.push(obj);
         })
         }
         }
       }
+      console.log(arr);
       function createcard(emo){
         return(
+            <div className='cc'> 
             <NEowcard
             name={emo.name}
             ab={emo.abmg}
@@ -61,7 +66,9 @@ function NEOW() {
             cr={emo.clrelvel}
             ms={emo.misdis}
             or={emo.orbeth}
+            
             />
+          </div>
         )
       }
       return (
@@ -74,7 +81,7 @@ function NEOW() {
         className="neo">
         {
             issubmit ?
-            <div>   
+            <div >   
           {
             <div className="ca">
          
@@ -93,6 +100,10 @@ function NEOW() {
             <input type="text" className="in" placeholder="YYYY-MM-DD" onChange={handlee}  onKeyPress={datset}></input>
             </div>
         }
+        <div style={{marginTop:"-50px"}}>
+        <Lowernav />
+        </div>
+
     </motion.div>
     </div>
   )
@@ -100,13 +111,3 @@ function NEOW() {
 export default NEOW
 
 
-// <NEowcard 
-// nn = {i.name}
-// aa ={i.abmg}
-// cc = {i.clapdt}
-// cl={i.clrelvel}
-// ii={i.isph}
-// mm={i.misdis}
-// oo={i.orbeth}
-// md={i.misdis}
-// />

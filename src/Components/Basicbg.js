@@ -52,7 +52,6 @@ function Basicbg() {
       <Model />
      
      </div>
-    
      </div>
   )
 }
