@@ -5,6 +5,7 @@ import Model from "./Model";
 import { browse } from './Carcomp';
 import Data from './Data.js'
 import AnotherNav from "./AnotherNav";
+import Lowernav from "./Lowernav";
 function Basicbg() {
   var hh;
   var cc;
@@ -50,8 +51,9 @@ function Basicbg() {
       </motion.div>
      
       <Model />
-     
      </div>
+     <Lowernav />
+
      </div>
   )
 }

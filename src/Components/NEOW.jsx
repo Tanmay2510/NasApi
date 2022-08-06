@@ -6,6 +6,21 @@ import { Grid } from '@mui/material'
 import AnotherNav from "./AnotherNav"
 import NEowcard from './NEowcard'
 import Lowernav from './Lowernav'
+import ztf from "./cardicon/ztf.svg";
+import twttf from "./cardicon/twttf.svg";
+import ttff from "./cardicon/ttff.svg";
+import thttf from "./cardicon/thttf.svg";
+import tftft from "./cardicon/tftft.svg";
+import fttff from "./cardicon/fttff.svg";
+import ftt from "./cardicon/ftt.svg";
+import ffttw from "./cardicon/ffttw.svg";
+import fftfif from "./cardicon/fftfif.svg";
+import tftth from "./cardicon/tftth.svg";
+
+
+
+
+export var num;
 function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
@@ -32,8 +47,10 @@ function NEOW() {
         if(a){
         Object.entries(a).map((e)=>{
           a2=e[1];
+          
         })
         if(a2){
+          console.log(a2);
 
         a2.forEach((info)=>{
           obj={
@@ -43,7 +60,7 @@ function NEOW() {
               isph:info.is_potentially_hazardous_asteroid,
               clapdt: info.close_approach_data[0].close_approach_date_full,
               clrelvel: info.close_approach_data[0].relative_velocity.kilometers_per_hour,
-              misdis: info.close_approach_data[0].miss_distance.kilometers,
+              misdis: info.close_approach_data[0].miss_distance.lunar,
               orbeth: info.close_approach_data[0].orbiting_body,
           }
           
@@ -53,10 +70,12 @@ function NEOW() {
         }
         }
       }
-      console.log(arr);
       function createcard(emo){
         return(
-            <div className='cc'> 
+            <motion.div className='cc'
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{duration:1}}> 
             <NEowcard
             name={emo.name}
             ab={emo.abmg}
@@ -68,7 +87,7 @@ function NEOW() {
             or={emo.orbeth}
             
             />
-          </div>
+          </motion.div>
         )
       }
       return (
@@ -82,15 +101,34 @@ function NEOW() {
         {
             issubmit ?
             <div >   
+          
+            
           {
             <div className="ca">
+      <h1>Number of Asteroids: {a2 ? a2.length : 0}</h1>
+      <div className="midside">
+         <div className="side">
+         <img src={ztf}></img>
+         <img src={twttf}></img>
+         <img src={ttff}></img>
+         <img src={thttf}></img>
+         <img src={tftft}></img>
+         <img src={fttff}></img>
+         <img src={ftt}></img>
+         <img src={ffttw}></img>
+         <img src={fftfif}></img>
+         <img src={tftth}></img>
+         </div>
+      <div className="midside">
          
             {
               arr.map(createcard)
             }   
       
-
+</div>
             </div>
+      </div>
+
             }
             </div>
             :
