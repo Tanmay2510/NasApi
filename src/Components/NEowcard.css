@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 .all p{
    z-index: 1;
-   color: white;
+   color: rgb(51, 50, 50);
    font-size: 17px;
    font-family: 'Roboto Slab', serif;
    margin-top: 10px;
+   font-weight: 600;
 }
+
 .hovvc{
    width:25%;
    margin-top: -50px;

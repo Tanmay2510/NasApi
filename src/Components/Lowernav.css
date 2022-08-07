@@ -6,13 +6,16 @@
     background-color: transparent;
     height: 40px;
 }
-.low a{
+.aa{
     color: rgb(252, 250, 248);
+}
+.low a{
+   
     font-size: 25px;
     font-family: 'Source Sans Pro', sans-serif;    text-decoration: none;
     z-index: 1;
 }
-a:hover{
-    
+.aa:hover{
+    color:wheat;
     cursor: pointer;
 }

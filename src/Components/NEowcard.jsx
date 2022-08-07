@@ -18,7 +18,7 @@ var sr;
       sr = ztf;
   }else if(props.ms>10 && props.ms<=20){
     sr = twttf;
-}else if(props.ms>30 && props.ms<=30){
+}else if(props.ms>20 && props.ms<=30){
   sr = ttff;
 }else if(props.ms>30 && props.ms<=40){
   sr = thttf;
@@ -74,10 +74,10 @@ else if(props.ms>80 && props.ms<=90){
 
     <p>Asteroid name: {props.name}</p>
       <p>Absolute magnitude: {props.ab}h</p>
-    <p>Minimum diameter: {props.mi}km</p>
+    <p>Minimum diameter: {props.mi} km</p>
     <p>Closest approach: {props.cl}</p>
-    <p>Relative velocity: {props.cr}kmph</p>
-    <p>Miss Distance: {props.ms}ld</p>
+    <p>Relative velocity: {props.cr} kmph</p>
+    <p>Miss Distance: {props.ms}ld(lunar Distance)</p>
     <p>Orbiting body: {props.or}</p>
     </div>
     

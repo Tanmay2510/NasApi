@@ -25,6 +25,7 @@ function NEOW() {
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
     const [issubmit,setissubmit] = useState(false);
+    const [isiconclicked,setisiconclicked] = useState(true);
     const ur = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${nowdate}&end_date=${nowdate}&api_key=${process.env.REACT_APP_API_KEY}`
     const datset = (event)=>{
         if(event.key === "Enter"){
@@ -90,6 +91,7 @@ function NEOW() {
           </motion.div>
         )
       }
+     
       return (
     <div className='cont'>
     <AnotherNav />
@@ -106,27 +108,46 @@ function NEOW() {
           {
             <div className="ca">
       <h1>Number of Asteroids: {a2 ? a2.length : 0}</h1>
-      <div className="midside">
          <div className="side">
-         <img src={ztf}></img>
-         <img src={twttf}></img>
-         <img src={ttff}></img>
-         <img src={thttf}></img>
-         <img src={tftft}></img>
-         <img src={fttff}></img>
-         <img src={ftt}></img>
-         <img src={ffttw}></img>
-         <img src={fftfif}></img>
-         <img src={tftth}></img>
+          <img src={ztf} name="ztf" 
+          ></img>
+          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+          <p>0-10Ld</p></a>
+         
+         <img src={twttf} name="twttf" ></img> <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+          <p >10-20Ld</p></a>
+         <img src={ttff} name="ttff"></img> 
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>20-30Ld</p></a>
+         <img src={thttf} name="thttf"></img>
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>30-40Ld</p></a>
+         <img src={tftft} name="tftft" ></img>  
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>40-50Ld</p></a>
+         <img src={fttff} name="fttff" ></img> 
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>50-60Ld</p></a>
+         <img src={ftt} name="ftt" ></img> 
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>60-70Ld</p></a>
+         <img src={ffttw} name="ffttw" ></img>  
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>70-80Ld</p></a>
+         <img src={fftfif} name="fftfif" ></img> 
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>80-90Ld</p></a>
+         <img src={tftth} name="tftth"></img> 
+         <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <p>&#62;90Ld</p></a>
          </div>
-      <div className="midside">
+      <div className="midsi">
          
             {
               arr.map(createcard)
             }   
       
 </div>
-            </div>
       </div>
 
             }
