@@ -16,23 +16,32 @@ import ftt from "./cardicon/ftt.svg";
 import ffttw from "./cardicon/ffttw.svg";
 import fftfif from "./cardicon/fftfif.svg";
 import tftth from "./cardicon/tftth.svg";
+import Whatt from './Whatt'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 
 
 
 export var num;
 function NEOW() {
+  const nvgt = useNavigate();
     const [nowdate,setnowdate] = useState("");
     const [data,setdata]=useState({});
     const [issubmit,setissubmit] = useState(false);
-    const [isiconclicked,setisiconclicked] = useState(true);
     const ur = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${nowdate}&end_date=${nowdate}&api_key=${process.env.REACT_APP_API_KEY}`
     const datset = (event)=>{
+
         if(event.key === "Enter"){
-        axios.get(ur).then((response)=>{
+        axios
+        .get(ur)
+        .then((response)=>{
         setdata(response.data);
         setissubmit(true);
-    })}}
+        }
+
+        ).catch(err=>{
+          nvgt("/Whatt");
+        })}}
       function handlee(e){
         setnowdate(e.target.value);       
       }
@@ -51,7 +60,6 @@ function NEOW() {
           
         })
         if(a2){
-          console.log(a2);
 
         a2.forEach((info)=>{
           obj={
@@ -71,6 +79,10 @@ function NEOW() {
         }
         }
       }
+      if(data.element_count===0  ){
+        nvgt("/Whatt");
+      }
+
       function createcard(emo){
         return(
             <motion.div className='cc'

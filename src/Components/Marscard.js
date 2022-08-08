@@ -8,7 +8,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import "./Marscard.css";
 import { useNavigate } from 'react-router-dom';
-import Lowernav from './Lowernav';
 export var roverName
 function Marscard(props) {
     const Navigate = useNavigate();
