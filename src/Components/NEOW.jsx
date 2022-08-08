@@ -106,38 +106,38 @@ function NEOW() {
           
             
           {
-            <div className="ca">
+            <div className="ca ">
       <h1>Number of Asteroids: {a2 ? a2.length : 0}</h1>
          <div className="side">
-          <img src={ztf} name="ztf" 
+          <img src={ztf} name="ztf" className="zt"
           ></img>
           <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
           <p>0-10Ld</p></a>
          
-         <img src={twttf} name="twttf" ></img> <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <img src={twttf} name="twttf"  id="tt"></img> <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
           <p >10-20Ld</p></a>
-         <img src={ttff} name="ttff"></img> 
+         <img src={ttff} name="ttff" id="ttt"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>20-30Ld</p></a>
-         <img src={thttf} name="thttf"></img>
+         <img src={thttf} name="thttf" id="ttf"></img>
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>30-40Ld</p></a>
-         <img src={tftft} name="tftft" ></img>  
+         <img src={tftft} name="tftft" id="fff"></img>  
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>40-50Ld</p></a>
-         <img src={fttff} name="fttff" ></img> 
+         <img src={fttff} name="fttff" id="fs"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>50-60Ld</p></a>
-         <img src={ftt} name="ftt" ></img> 
+         <img src={ftt} name="ftt" id="sss"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>60-70Ld</p></a>
-         <img src={ffttw} name="ffttw" ></img>  
+         <img src={ffttw} name="ffttw" id="se"></img>  
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>70-80Ld</p></a>
-         <img src={fftfif} name="fftfif" ></img> 
+         <img src={fftfif} name="fftfif" id="en" ></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>80-90Ld</p></a>
-         <img src={tftth} name="tftth"></img> 
+         <img src={tftth} name="tftth" id="nn"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>&#62;90Ld</p></a>
          </div>
