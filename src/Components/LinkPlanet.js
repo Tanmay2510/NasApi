@@ -42,6 +42,7 @@ function LinkPlanet() {
          
         </div>
         <div style={{marginTop:"-10px"}}>
+        <hr  className="hhh"></hr>
 
 <Lowernav />
 </div>

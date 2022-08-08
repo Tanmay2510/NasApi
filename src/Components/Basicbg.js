@@ -52,6 +52,8 @@ function Basicbg() {
      
       <Model />
      </div>
+     <hr  className="hh"></hr>
+
      <Lowernav />
 
      </div>

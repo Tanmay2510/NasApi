@@ -40,6 +40,8 @@ const [playSlide, setPlaySlide] = useState(false);
             }
           setdateenter(true)
         
+        }).catch(err=>{
+          navigate("/WHAT");
         })
       }
     }
@@ -142,7 +144,9 @@ const [playSlide, setPlaySlide] = useState(false);
                   value={thedate} //final res of the user text
                   onChange={event => setthedate(event.target.value)}
                   onKeyPress={dateset}
-                  type="text" />   
+                  type="text" /> 
+     <hr  className="hhhh"></hr>
+
     <Lowernav />
 
     </div>
