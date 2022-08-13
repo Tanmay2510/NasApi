@@ -35,7 +35,7 @@ import satringMap from "../textures/8ksatring.png"
         saturation={0}
         fade={true}
       />
-    
+    <mesh  rotation-x={-0.3} rotation-y={-0.2}  >
       <mesh
       position={[0, 0 , 3]}
       ref={cloudsRef}>
@@ -64,6 +64,8 @@ import satringMap from "../textures/8ksatring.png"
          />
     } 
       </mesh>
+    </mesh>
+
     </>
   );
 }
