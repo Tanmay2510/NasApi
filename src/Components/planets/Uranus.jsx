@@ -4,18 +4,22 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { TextureLoader } from "three";
 import uranMap from "../textures/uranusmap.jpg"
+import urringmap from "../textures/uranusringcolour.jpg"
  function Uranus(props) {
-  const [colorMap ] = useLoader(
+  const [colorMap,ringMap ] = useLoader(
     TextureLoader,
-    [uranMap  ]
+    [uranMap  , urringmap]
   );
 
   const urRef = useRef();
+  const cloudsRef = useRef();
 
   useFrame(({ clock }) => {
     const elapsedTime = clock.getElapsedTime();
 
     urRef.current.rotation.y = elapsedTime / 6;
+    cloudsRef.current.rotation.z = elapsedTime / 6;
+
   });
 
   return (
@@ -30,7 +34,17 @@ import uranMap from "../textures/uranusmap.jpg"
         saturation={0}
         fade={true}
       />
-    
+      <mesh
+      position={[0, 0 , 3]}
+      ref={cloudsRef}>
+         <ringBufferGeometry args={[1.2, 1.6, 33]} />
+         <meshPhongMaterial
+          map={ringMap}
+         
+          opacity={1}
+          transparent={true}
+        />
+   </mesh>
       
       <mesh ref={urRef} position={[0, 0, 3]} >
         <sphereGeometry args={[1, 32, 32]} />

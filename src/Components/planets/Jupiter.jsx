@@ -5,7 +5,7 @@ import * as THREE from "three";
 import Jupitermap from "../textures/8kjupiter.jpg";
 import { TextureLoader } from "three";
 
- function Jupiter(props) {
+ function Jupiter() {
   const [colorMap] = useLoader(
     TextureLoader,
     [Jupitermap]

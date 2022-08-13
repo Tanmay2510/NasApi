@@ -4,7 +4,7 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 import { TextureLoader } from "three";
 import nepmap from "../textures/2k_neptune.jpg";
- function Neptune(props) {
+ function Neptune() {
   const [colorMap] = useLoader(
     TextureLoader,
     [nepmap]

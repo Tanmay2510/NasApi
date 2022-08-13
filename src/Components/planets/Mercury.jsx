@@ -5,7 +5,7 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import { TextureLoader } from "three";
 import ColorMap from "../textures/8kmercury.jpg"
 import Mercpecularmap from "../textures/mercurybump.jpg"
- function Mercury(props) {
+ function Mercury() {
   const [colorMap,specularMap] = useLoader(
     TextureLoader,
     [ColorMap,Mercpecularmap]

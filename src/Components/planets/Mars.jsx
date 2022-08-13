@@ -6,7 +6,7 @@ import { TextureLoader } from "three";
 import Marsmap from "../textures/normalmar.jpg"
 import ColorMap from "../textures/8kmars.jpg"
 import Marspecularmap from "../textures/specmar.jpg"
- function Mars(props) {
+ function Mars() {
   const [normalMap,colorMap,specularMap] = useLoader(
     TextureLoader,
     [Marsmap,ColorMap,Marspecularmap]
@@ -34,7 +34,7 @@ import Marspecularmap from "../textures/specmar.jpg"
       />
     
       <mesh ref={marsRef} position={[0, 0, 3]} >
-        <sphereGeometry args={[1, 32, 32]} />
+        <sphereGeometry args={[1.020, 32, 32]} />
         <meshPhongMaterial specularMap={specularMap} />
         
         <meshStandardMaterial

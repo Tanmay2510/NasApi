@@ -8,7 +8,7 @@ import EarthSpecularMap from "../textures/8k_earth_specular_map.jpg";
 import EarthCloudsMap from "../textures/8k_earth_clouds.jpg";
 import { TextureLoader } from "three";
 
- function Earth(props) {
+ function Earth() {
   const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(
     TextureLoader,
     [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap]

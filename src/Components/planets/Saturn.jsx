@@ -6,7 +6,7 @@ import { TextureLoader } from "three";
 import satMap from "../textures/8ksaturn.jpg"
 import satringMap from "../textures/8ksatring.png"
 
- function Saturn(props) {
+ function Saturn() {
   const [colorMap , ringMap] = useLoader(
     TextureLoader,
     [satMap,  satringMap]
@@ -19,7 +19,8 @@ import satringMap from "../textures/8ksatring.png"
     const elapsedTime = clock.getElapsedTime();
 
     satRef.current.rotation.y = elapsedTime / 6;
-    cloudsRef.current.rotation.y = elapsedTime / 6;
+    cloudsRef.current.rotation.z = elapsedTime / 6;
+    
   });
 
   return (
@@ -36,11 +37,12 @@ import satringMap from "../textures/8ksatring.png"
       />
     
       <mesh
-     
+      position={[0, 0 , 3]}
       ref={cloudsRef}>
-         <ringBufferGeometry args={[1, 1, 1]} />
+         <ringBufferGeometry args={[1.1, 1.7, 33]} />
          <meshPhongMaterial
           map={ringMap}
+         
           opacity={1}
           transparent={true}
         />

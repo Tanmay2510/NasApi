@@ -32,7 +32,8 @@ function LinkPlanet() {
         </motion.div>  
      <hr  className="hhh"></hr>
 
-        <div >
+     <div className="box">
+        <div className='b1'>
         <img className="timg" src = {data ? data.hdurl : null } alt="Theimage"></img>
         </div>
         <div className="belline">
@@ -41,6 +42,8 @@ function LinkPlanet() {
         <p>Image Copyright: ©   {data.copyright ?data.copyright:"NASA"}</p>
          
         </div>
+     </div>
+
         <div style={{marginTop:"-10px"}}>
         <hr  className="hhh"></hr>
 

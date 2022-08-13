@@ -7,7 +7,7 @@ import venSpecularMap from "../textures/venusbump.jpg";
 import venAtmMap from "../textures/Venatm.jpg";
 import { TextureLoader } from "three";
 
- function Venus(props) {
+ function Venus() {
   const [colorMap, specularMap, cloudsMap] = useLoader(
     TextureLoader,
     [VenDayMap, venSpecularMap,venAtmMap]
