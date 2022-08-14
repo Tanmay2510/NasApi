@@ -6,7 +6,6 @@ export var browse;
 import { Button } from '@mui/material';
 function Carcomp(props) {
   const navigate = useNavigate();
-
   const  navig = () => {
        browse="/"+props.namee;
       navigate(browse);
@@ -17,17 +16,11 @@ function Carcomp(props) {
     <div className='tpi'>
     <p>
     {props.content}
-
    <br></br>
     {props.namee} size: {props.siz} <br></br>
     {props.namee} gravity: {props.g}<br></br>
     {props.namee} age: {props.age} <br></br>
-    </p>
-    
-
-
-    
-             
+    </p>      
     <img src = {props.name} style={props.st}></img>
     </div>
     <div className='arbut'>
@@ -39,7 +32,6 @@ function Carcomp(props) {
       right: 50,
      
     }}>
-
     <Button color="secondary" onClick={navig} variant="outlined">Read More About {props.namee}...</Button>
     </motion.div>
     </div>

@@ -93,7 +93,6 @@
  .hhhh{
     margin-top: -5px;
     margin-bottom: 15px;
-    /* height: 1px; */
     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%,white));
 
 }

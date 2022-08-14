@@ -6,7 +6,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import "./Marscard.css";
 import { useNavigate } from 'react-router-dom';
 export var roverName
 function Marscard(props) {

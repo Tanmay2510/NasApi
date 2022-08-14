@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { TextureLoader } from "three";
 import uranMap from "../textures/uranusmap.jpg"
 import urringmap from "../textures/uranusringcolour.jpg"
- function Uranus(props) {
+ function Uranus() {
   const [colorMap,ringMap ] = useLoader(
     TextureLoader,
     [uranMap  , urringmap]

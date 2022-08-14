@@ -5,14 +5,11 @@
     padding:10%;
     font-family: 'Teko', sans-serif;
     font-size: 40px;
-    margin-top: 5%;
-
-    
+    margin-top: 5%; 
 }
 .forfl{
     display: flex   ;
-    justify-content: center;
-    
+    justify-content: center;  
     }
 
 .lin{

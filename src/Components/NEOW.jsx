@@ -18,10 +18,6 @@ import fftfif from "./cardicon/fftfif.svg";
 import tftth from "./cardicon/tftth.svg";
 import Whatt from './Whatt'
 import { Navigate, useNavigate } from 'react-router-dom'
-
-
-
-
 export var num;
 function NEOW() {
   const nvgt = useNavigate();
