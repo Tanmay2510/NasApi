@@ -2,8 +2,9 @@ import React from 'react'
 import "./Carcomp.css"
 import { useNavigate} from 'react-router-dom';
 import { motion } from "framer-motion"
-export var browse;
 import { Button } from '@mui/material';
+
+export var browse;
 function Carcomp(props) {
   const navigate = useNavigate();
   const  navig = () => {
@@ -21,7 +22,7 @@ function Carcomp(props) {
     {props.namee} gravity: {props.g}<br></br>
     {props.namee} age: {props.age} <br></br>
     </p>      
-    <img src = {props.name} style={props.st}></img>
+    <img src = {props.name} alt = "planets" style={props.st}></img>
     </div>
     <div className='arbut'>
     <motion.div
