@@ -5,7 +5,6 @@ import Thecar from './Thecar';
 import './Allsection.css';
 import Bott from './Bott';
 import {motion} from 'framer-motion'
-import Lowernav from './Lowernav';
 function Allsection() {
   return (
     <motion.div

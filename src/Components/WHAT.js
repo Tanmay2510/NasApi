@@ -19,7 +19,7 @@ function Notdate() {
     animate={{
       rotate: isActive ? 360 : 0
     }}>
-    <img src={al}></img><br></br>
+    <img src={al} alt="ic"></img><br></br>
     </motion.div>
     
     <a href="/Marsphoto" className='lin'>Back to rovers</a>

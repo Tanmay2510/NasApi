@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-import * as THREE from "three";
 import Jupitermap from "../textures/8kjupiter.jpg";
 import { TextureLoader } from "three";
 

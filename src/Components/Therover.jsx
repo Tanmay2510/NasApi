@@ -46,6 +46,7 @@ const [playSlide, setPlaySlide] = useState(false);
       }
     }
    var arr=[];
+   // eslint-disable-next-line array-callback-return
    Object.entries(dat).map((ent) => {
     ent[1].forEach((the) =>{
       arr.push(the.img_src)
@@ -70,6 +71,7 @@ const [playSlide, setPlaySlide] = useState(false);
         return () => clearInterval(handleAutoplay);
       }
 
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [next]);
       
       return (
@@ -129,7 +131,7 @@ const [playSlide, setPlaySlide] = useState(false);
                   <p>Launching date: {props.d}</p>
                   {props.l ? <p>Last contact: {props.l}</p> : null}
                 </div>
-                <img src={props.imm}></img>
+                <img src={props.imm} alt="rovimg"></img>
               </div>
               <div className="bott">
                   <p>Objective: {props.g}</p>

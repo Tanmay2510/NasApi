@@ -22,7 +22,7 @@ function Whatt() {
     animate={{
       rotate: isAct ? 360 : 0
     }}>
-    <img src={al}></img><br></br>
+    <img src={al} alt="ico"></img><br></br>
     </motion.div>
     
     <a href="/NEOW" className='lin'>Back to Asteroids</a>

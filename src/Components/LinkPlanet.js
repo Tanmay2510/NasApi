@@ -11,6 +11,7 @@ function LinkPlanet() {
     axios.get(apod).then((response) => {
         setData(response.data);
     })
+              // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
   return (
     <motion.div

@@ -19,10 +19,10 @@ function AnotherNav() {
   return (
     <div className='theicons'>
     <Draggable>
-    <img src={mercury} ></img> 
-    <img src={earth}></img>
-    <img src={uranus} ></img>
-    <img src={jupiter}></img>
+    <img src={mercury} alt="mercury"></img> 
+    <img src={earth} alt="earth"></img>
+    <img src={uranus} alt="uranus"></img>
+    <img src={jupiter} alt="jupiter"></img>
     </Draggable>
     <div className='wholename'>
     <div className='icons'>
@@ -31,10 +31,10 @@ function AnotherNav() {
     <h2 onClick={navv}>NAPP</h2>
     </div>
     <Draggable>
-    <img src={mars} ></img>
-    <img src={saturn} ></img> 
-    <img src={neptune} ></img>
-    <img src={venus}></img>
+    <img src={mars} alt="mars"></img>
+    <img src={saturn} alt="saturn"></img> 
+    <img src={neptune} alt="neptune" ></img>
+    <img src={venus} alt="venus"></img>
      </Draggable>
      </div>
 

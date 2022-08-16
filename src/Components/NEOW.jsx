@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import axios from "axios"
 import {motion} from "framer-motion"
 import "./NEOW.css"
-import { Grid } from '@mui/material'
 import AnotherNav from "./AnotherNav"
 import NEowcard from './NEowcard'
 import Lowernav from './Lowernav'
@@ -16,8 +15,7 @@ import ftt from "./cardicon/ftt.svg";
 import ffttw from "./cardicon/ffttw.svg";
 import fftfif from "./cardicon/fftfif.svg";
 import tftth from "./cardicon/tftth.svg";
-import Whatt from './Whatt'
-import { Navigate, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 export var num;
 function NEOW() {
   const nvgt = useNavigate();
@@ -47,10 +45,12 @@ function NEOW() {
       var obj;
       var arr=[];
       if(nowdate){
+      // eslint-disable-next-line array-callback-return
       Object.entries(data).map((ent) => {
          a = ent[1];
         })
         if(a){
+        // eslint-disable-next-line array-callback-return
         Object.entries(a).map((e)=>{
           a2=e[1];
           
@@ -117,35 +117,35 @@ function NEOW() {
             <div className="ca ">
       <h1>Number of Asteroids: {a2 ? a2.length : 0}</h1>
          <div className="side">
-          <img src={ztf} name="ztf" className="zt"
+          <img src={ztf} alt="ztf" name="ztf" className="zt"
           ></img>
           <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
           <p>0-10Ld</p></a>
          
-         <img src={twttf} name="twttf"  id="tt"></img> <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
+         <img src={twttf} alt="twttf" name="twttf"  id="tt"></img> <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
           <p >10-20Ld</p></a>
-         <img src={ttff} name="ttff" id="ttt"></img> 
+         <img src={ttff} name="ttff" alt="ttff" id="ttt"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>20-30Ld</p></a>
-         <img src={thttf} name="thttf" id="ttf"></img>
+         <img src={thttf} name="thttf"  alt="thttf" id="ttf"></img>
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>30-40Ld</p></a>
-         <img src={tftft} name="tftft" id="fff"></img>  
+         <img src={tftft} name="tftft" alt="tftft" id="fff"></img>  
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>40-50Ld</p></a>
-         <img src={fttff} name="fttff" id="fs"></img> 
+         <img src={fttff} name="fttff" alt="fttff" id="fs"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>50-60Ld</p></a>
-         <img src={ftt} name="ftt" id="sss"></img> 
+         <img src={ftt} name="ftt" alt="ftt" id="sss"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>60-70Ld</p></a>
-         <img src={ffttw} name="ffttw" id="se"></img>  
+         <img src={ffttw} name="ffttw" alt="ffttw" id="se"></img>  
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>70-80Ld</p></a>
-         <img src={fftfif} name="fftfif" id="en" ></img> 
+         <img src={fftfif} name="fftfif" alt="fftfif" id="en" ></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>80-90Ld</p></a>
-         <img src={tftth} name="tftth" id="nn"></img> 
+         <img src={tftth} name="tftth" alt="tftth" id="nn"></img> 
          <a href="https://en.wikipedia.org/wiki/Lunar_distance_(astronomy)">
          <p>&#62;90Ld</p></a>
          </div>

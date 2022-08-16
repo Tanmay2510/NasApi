@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
-import * as THREE from "three";
 import { TextureLoader } from "three";
 import satMap from "../textures/8ksaturn.jpg"
 import satringMap from "../textures/8ksatring.png"
