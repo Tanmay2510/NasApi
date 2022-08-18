@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 .bu{
     background-color: transparent;
-    border-radius: 50px;
+    border-radius: 3.6603221083455346vw;
     border-color: rgb(238, 155, 238);
     color: antiquewhite;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
+    padding-left: 1.4641288433382138vw;
+    padding-right: 1.4641288433382138vw;
+    margin-top: 0.7320644216691069vw;
 }
 .bu:hover{
     background-color: rgba(16,18,27,0.4);
@@ -17,21 +17,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width:80%;
+    width:18vw;
 }
 .box2 li{
-    padding-left: 50px;
+    padding-left: 3.6603221083455346vw;
     text-align: left;
     color:antiquewhite;
 }
 .box2 p{
     text-align: left;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 2.1961932650073206vw;
+    padding-right: 0.7320644216691069vw;
     
     font-family: "Cormorant",serif;
     color: antiquewhite;
-    font-size: 17px;
+    font-size: 1.2445095168374818vw;
 }
   
 .box2 {
@@ -43,7 +43,7 @@
     /* background: rgba(255,255,255 ,0.4); */
 
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 10px;
+    border-radius: 0.7320644216691069vw;
     backdrop-filter: blur(2px);
     transition: all .3s ease-in-out;
   }
@@ -52,11 +52,11 @@
 
 .box2 h1{
     font-family: 'Cinzel', serif;
-    margin-top:10px;
+    margin-top:0.7320644216691069vw;
     color: antiquewhite;
     text-align: center;
     cursor: pointer;
 }
 .p4{
-    margin-top: 5px;
+    margin-top: 0.36603221083455345vw;
 }

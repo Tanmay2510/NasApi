@@ -1,10 +1,10 @@
 .v{
     z-index: 0;
-    margin-top: -600px;
+    margin-top: -43.92386530014641vw;
 }
 .v:hover{
-    height: 510px;
-    width: 510px;
+    height: 37.33528550512445vw;
+    width: 37.33528550512445vw;
     stroke: rgb(219, 17, 219);
     stroke-width: 5px;
     filter:blur(9px);

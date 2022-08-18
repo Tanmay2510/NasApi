@@ -11,8 +11,8 @@
 }
 .sosp{
     color:white;
-    line-height: 23px;
-    word-spacing: 5px;
+    line-height: 1.6837481698389458vw;
+    word-spacing: 0.36603221083455345vw;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     margin-top: 0;
@@ -24,7 +24,7 @@
 .thegal{
     background-color: black;
     z-index: 1;
-        height: 100%;
+        height: -1vw;
         margin:  auto;
 }
 .opp{

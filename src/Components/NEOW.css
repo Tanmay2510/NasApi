@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 .imbg{
     color:wheat;
-    padding-top: 15%;
+    padding-top: 15vw;
     height: 86.5vh;
     background-image: url("../images/stk.svg");
     background-position: center;
@@ -10,23 +10,23 @@
 }
 .ca h1{
     color:rgb(59, 58, 58);
-    padding-top: 20px;
+    padding-top: 1.4641288433382138vw;
 }
 .side{
-    width:5%;
+    width:5vw;
     position: sticky;
     top:0;
 }
 
 .side img{
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 20px;
+    margin-left: 1.0980966325036603vw;
+    margin-top: 1.4641288433382138vw;
 }
 
 .side p{
-    font-size: 14px;
-    margin-left: 7px;
+    font-size: 1.0248901903367496vw;
+    margin-left: 0.5124450951683748vw;
  }
  .side a{
     color:black;
@@ -42,11 +42,12 @@
 }
 .neo{
     width: 100%;
+     /* //99.8 */
     font-family: 'Exo', sans-serif; 
 }
 .in{
-    border-radius:50px ;
-    padding:.5em 1.5em;
+    border-radius:3.6603221083455346vw ;
+    padding:.5rem 1.5rem;
     text-align: center;  
     color: wheat; 
     border: rgb(201, 124, 201) solid 1px;
@@ -54,10 +55,10 @@
 }
 .cc{
     display:inline-flex;
-    margin-top:90px;
-    margin-left:50px;
-    margin-right:50px;
-    margin-bottom:80px;  
+    margin-top:6.588579795021962vw;
+    margin-left:3.6603221083455346vw;
+    margin-right:3.6603221083455346vw;
+    margin-bottom:5.856515373352855vw;  
 }
 
 .in:hover{
@@ -68,7 +69,7 @@
     background-color: rgba(16,18,27,0.4);
 }
 .midsi{
-    margin-top: -82%;
+    margin-top: -80vw;
 }
 .ca {
 	background: linear-gradient(-180deg,#b1699f,#e263c2, #ee7752, #e73c7e,#e73cbc,#e417b0,#853872);

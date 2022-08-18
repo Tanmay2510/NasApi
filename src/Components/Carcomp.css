@@ -1,6 +1,6 @@
 .tp{
     text-align: left;
-    margin-left: 8%;
+    margin-left: 6.5vw;
     font-family: 'Arima', cursive;
   }
 
@@ -8,7 +8,7 @@
     display: flex;
     text-align: left;
     justify-content: space-evenly;
-    margin-bottom: -41px;
+    margin-bottom: -1vw;
   }
   .whole{
     color: black;
@@ -16,15 +16,15 @@
  
   .tpi p{
     font-family: 'Arima', cursive;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6.5vw;
+    margin-right: 5vw;
     font-size: 22px;
   }
 
   .tpi img{
-    margin-top:-5%;
-    margin-right: 4%;
-    width: 30%;
+    margin-top:-5.1vw;
+    margin-right: 4vw;
+    width: 30vw;
   }
 
   

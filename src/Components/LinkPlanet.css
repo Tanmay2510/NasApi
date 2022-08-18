@@ -2,13 +2,13 @@
 .belline{
     display: flex;
     justify-content: space-around;
-    font-size: 18px;  
+    font-size: 1.3177159590043923vw;  
     color: black;
     font-weight: bold;  
 }
 .hhh{
-    margin-top: -5px;
-    margin-bottom: 15px;
+    margin-top: -0.36603221083455345vw;
+    margin-bottom: 1.0980966325036603vw;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%,black));
 
 }
@@ -17,24 +17,24 @@
     background-color: rgb(208, 164, 230);
 }
 .theh{
-    padding-top: 15px;
+    padding-top: 1.0980966325036603vw;
     text-align: left;
-    margin-left: 70px ;
+    margin-left: 5.124450951683748vw ;
 }
 .contp{
-    margin-right: 55px;
-    margin-left: 70px;
+    margin-right: 4.026354319180088vw;
+    margin-left: 5.124450951683748vw;
     text-align: left;
     font-weight: 600;
 }
 .contp p{
-    font-size: 20px;
+    font-size: 1.4641288433382138vw;
 }
 .belp{
 
-    margin-right: 650px;
+    margin-right: 47.58418740849195vw;
 }
 .timg{
 
-    width: 90%;
+    width: 90vw;
 }

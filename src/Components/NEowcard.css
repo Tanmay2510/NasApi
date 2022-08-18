@@ -2,28 +2,28 @@
 .all p{
    z-index: 1;
    color: rgb(51, 50, 50);
-   font-size: 17px;
+   font-size: 1.2445095168374818vw;
    font-family: 'Roboto Slab', serif;
-   margin-top: 10px;
+   margin-top: 0.7320644216691069vw;
    font-weight: 600;
 }
 
 .hovvc{
    width:25%;
-   margin-top: -50px;
-   margin-left: 150px;
+   margin-top: -3.6603221083455346vw;
+   margin-left: 10.980966325036603vw;
 }
 .arr{
    color: white;
-   margin-left: 200px;
+   margin-left: 14.641288433382138vw;
 }
 
 
 
 .all{
-   min-width: 400px;
+   min-width: 29.282576866764277vw;
    width: auto;
    text-align: left;
-   padding-left: 15px;
+   padding-left: 1.0980966325036603vw;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
