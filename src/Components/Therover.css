@@ -8,18 +8,18 @@
     height: auto;
     background: rgba(20, 20, 20, 0.4);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 10px;
+    border-radius: 0.7320644216691069vw;
     backdrop-filter: blur(2px);
 }
 
 .formarg{
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 1.4641288433382138vw;
+    padding-top: 1.4641288433382138vw;
     color: antiquewhite;
 
 }
 .ii{
-    margin-top: 20px;
+    margin-top: 1.4641288433382138vw;
     cursor:pointer;
 }
 
@@ -31,18 +31,18 @@
     display: flex;
     justify-content: center;
     font-family:  'Cormorant',serif;
-    font-size: 25px;
+    font-size: 1.8301610541727673vw;
 }
 .but{
     color:antiquewhite;
     background: transparent;
-    margin-left:10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    width:40px;
-  height: 40px;
+    margin-left:0.7320644216691069vw;
+    margin-right: 0.7320644216691069vw;
+    margin-top: 0.7320644216691069vw;
+    width:2.9282576866764276vw;
+  height: 2.9282576866764276vw;
   border: solid 2px antiquewhite;
-  border-radius: 100%;
+  border-radius: 100vw;
 }  
 .but:hover{
     background-color: rgba(20, 20, 20, 0.4);
@@ -50,8 +50,8 @@
 }
 .heh{
     font-family: 'Cinzel', serif;
-    font-size: 80px;
-    margin-top: 5px;
+    font-size: 5.856515373352855vw;
+    margin-top: 0.36603221083455345vw;
     cursor: pointer;
 }
 .rovph{
@@ -63,48 +63,48 @@
 .part{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 2.1961932650073206vw;
 }
 .part img{
-    width: 35%;
-    height: 300px;
-    margin-right: -40px;
+    width: 35vw;
+    height: 22vw;
+    margin-right: -2.9282576866764276vw;
 }
 .partc{
     text-align: left;
     font-family:  'Cormorant',
     serif;
-    font-size: 29px;
+    font-size: 2.12298682284041vw;
 }
 .fo{
     font-family: 'Work Sans', sans-serif;
-    font-size: 20px;
+    font-size: 1.4641288433382138vw;
 }
 .bott p{ 
 
     font-family: 'Work Sans', sans-serif;
     text-align: left;
-    margin-right: 40px;
-    margin-left: 95px;
-    font-size: 20px;
-    margin-top: 10px;
+    margin-right: 2.9282576866764276vw;
+    margin-left: 6.954612005856515vw;
+    font-size: 1.4641288433382138vw;
+    margin-top: 0.7320644216691069vw;
     
  }
  .hhhh{
-    margin-top: -5px;
-    margin-bottom: 15px;
+    margin-top: -0.36603221083455345vw;
+    margin-bottom: 1.0980966325036603vw;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%,white));
 
 }
 .inp{
     background-color: rgba(20, 20, 20, 0.4);
-    margin-left: 10px;
-    border-radius: 50px;
-    margin-top: -30px;
+    margin-left: 0.7320644216691069vw;
+    border-radius: 3.6603221083455346vw;
+    margin-top: -2.1961932650073206vw;
     border: hidden;
-    margin-right:10px;
-    margin-bottom: 20px;
-    height: 35px;
+    margin-right:0.7320644216691069vw;
+    margin-bottom: 1.4641288433382138vw;
+    height: 2.562225475841874vw;
     color:rgb(233, 216, 216);
     padding: .5rem 1.5rem;
     
