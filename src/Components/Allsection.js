@@ -13,7 +13,7 @@ function Allsection() {
         transition={{duration:0.5}}>
     <section className="top">
     <Nab />
-    <Halftop />
+    <Halftop/>
     </section>
     <section className='middle'>
     <Thecar />

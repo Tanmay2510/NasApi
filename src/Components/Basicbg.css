@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
 .theicons{
-    height: 90px !important;
+    height: 6.588579795021962vw !important;
     display: flex;
     justify-content: space-evenly;
     background-color: black;
 }.theicons img{
-    margin-top: 10px;
-    width: 70px;
+    margin-top: 0.7320644216691069vw;
+    width: 5.124450951683748vw;
     
     background-color: black !important; 
 }
 .hh{
-        margin: 10px 0;
-        height: 1px;
+        margin: 0.7320644216691069vw 0;
+        height:auto;
         background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, rgb(255, 255, 255)));
     
 }
@@ -21,19 +21,19 @@
     
 }
 .icons{
-    margin-left: 100px;
+    margin-left:  7.320644216691069vw;
     background-color: transparent !important ;
-    margin-bottom:20px;
+    margin-bottom:1.4641288433382138vw;
 
 }
 .wholename{
     color: whitesmoke;
     font-family: 'Arima', cursive;  
     background-color: black !important; 
-    margin-top: 15px;
+    margin-top: 1.0980966325036603vw;
 }
 .wholename h2{
-    margin-top:-10px;
+    margin-top:-0.7320644216691069vw;
     background-color: black !important; 
 }
 .bg{
@@ -46,16 +46,16 @@
 .content{
     color:white;
     text-align: left;
-    margin-left:2%;
-    font-size: 17px;
+    margin-left:2.1vw;
+    font-size: 1.2445095168374818vw;
     width: 50%;
-    margin-right: 10px;
+    margin-right: 0.7320644216691069vw;
     font-family: 'Merriweather', serif;
     background-color: black;
 }
 .content h2{
-    height: 3% !important;
+    height: 3.4vw !important;
     font-family: 'Gentium Plus', serif;
-    font-size: 35px;
-    margin-bottom: -20px;
+    font-size:  2.562225475841874vw;
+    margin-bottom: -1.4641288433382138vw;
 }
