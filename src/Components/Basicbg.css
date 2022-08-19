@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
 .theicons{
     height: 6.588579795021962vw !important;
-    display: flex;
+    display: flex ;
     justify-content: space-evenly;
     background-color: black;
 }.theicons img{
     margin-top: 0.7320644216691069vw;
     width: 5.124450951683748vw;
-    
     background-color: black !important; 
 }
 .hh{

@@ -3,35 +3,50 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4.392386530014641vw;
+    
 }
+/* .grabbable{
+    margin-right: 70%;
+} */
 .nept{
+    /* margin-left: 65vw; */
     width: 15%;
 }
 
 .ur{
+    /* margin-left: 65vw; */
     width: 16%;
 }
 .sat{
+    /* margin-left: 65vw; */
     width: 20%;
 }
-.sun{   
+.sun{  
+    /* margin-left: 65vw; */
     clip-path: inset(0 0 70% 0);
     margin-top:1.0980966325036603vw ;
     z-index: 0;
 }
 .jup{
+    /* margin-left: 65vw; */
     width: 17%;
 }
 .mars{
+    /* margin-left: 65vw; */
     width: 7%;
     margin-top: 1.0248901903367496vw;
 }
 .ert{
+    /* margin-left: 65vw; */
     width: 16%;
 }
 .vns{
+    /* margin-left: 65vw; */
     width: 15%;
 }
 .merc{
+    /* margin-left: 65vw; */
     width: 11%;
 }
+
+

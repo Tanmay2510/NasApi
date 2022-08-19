@@ -5,7 +5,14 @@ import Thecar from './Thecar';
 import './Allsection.css';
 import Bott from './Bott';
 import {motion} from 'framer-motion'
+
+
 function Allsection() {
+  // const stylo = {
+  //   // backgroundColor:"yellow",
+  //   width: 100vw,
+  // }
+
   return (
     <motion.div
     initial={{opacity:0}}

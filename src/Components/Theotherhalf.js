@@ -14,14 +14,14 @@ function Theotherhalf() {
   return (
     <div className='plan'>
      <Draggable>
-       <img src={neptune} alt="neptune" className='nept'></img> 
-       <img src={uranus} alt="uranus" className='ur'></img> 
-       <img src={saturn} alt="saturn" className='sat'></img> 
-       <img src={jupiter} alt="jupiter" className='jup'></img> 
-       <img src={mars} alt="mars" className='mars'></img> 
-       <img src={earth} alt="earth" className='ert'></img> 
-       <img src={venus} alt="venus" className='vns'></img> 
-       <img src={mercury} alt="mercury" className='merc'></img> 
+     <img src={neptune} alt="neptune" className='nept '></img> 
+     <img src={uranus} alt="uranus" className='ur'></img> 
+     <img src={saturn} alt="saturn" className='sat'></img> 
+     <img src={jupiter} alt="jupiter" className='jup'></img> 
+     <img src={mars} alt="mars" className='mars'></img> 
+     <img src={earth} alt="earth" className='ert'></img> 
+     <img src={venus} alt="venus" className='vns'></img> 
+     <img src={mercury} alt="mercury" className='merc'></img> 
      </Draggable>
      
      <img src={sun} alt="sun" className='sun'></img>
