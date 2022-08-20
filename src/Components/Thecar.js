@@ -14,9 +14,10 @@ import Carousel from 'react-bootstrap/Carousel';
 function Thecar() {
   const stt={
     marginRight:"10px",
-    width:"450px",
-    height:"450px"
+    width:"50vw",
+    height:"25vw"
   }
+  
   const st ={
     marginTop:"10px"
   }
@@ -37,7 +38,7 @@ function Thecar() {
   That includes the Great Red Spot, which is a massive hurricane-like storm called an anticyclone. It's far bigger and longer lasting than any tempests that have ever raged across our planet's surface: It rotates in an ever-present oval that's more than the width of the entire Earth, although it has been 
   shrinking for as long as humans have been observing it.`
 
-  const nc =`Neptune, third most massive planet of the solar system and the eighth and outermost planet from the Sun.Neptune is named for the Roman god of the sea, who is identified with the Greek deity Poseidon, a son of the Titan Cronus and a brother of Zeus . 
+  const nc =`Neptune, third most massive planet of the solar system and the eighth and outermost planet from the Sun. 
   It is the second planet to have been found by means of a telescope. 
   Its discovery in 1846 was a remarkable combination of the application of solid Newtonian physics and a belief in a numerological scheme that later proved to be scientifically unfounded.`
 

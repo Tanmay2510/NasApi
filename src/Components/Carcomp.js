@@ -7,6 +7,9 @@ import { Button } from '@mui/material';
 export var browse;
 function Carcomp(props) {
   const navigate = useNavigate();
+  var bust = {
+    width:"20vw",
+  }
   const  navig = () => {
        browse="/"+props.namee;
       navigate(browse);
@@ -33,7 +36,7 @@ function Carcomp(props) {
       right: 50,
      
     }}>
-    <Button color="secondary" onClick={navig} variant="outlined">Read More About {props.namee}...</Button>
+    <Button style={bust} color="secondary" onClick={navig} variant="outlined">Read More About {props.namee}...</Button>
     </motion.div>
     </div>
   

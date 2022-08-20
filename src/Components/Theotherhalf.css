@@ -10,54 +10,68 @@
 } */
 .nept{
     /* margin-left: 65vw; */
-    width: 15%;
+    width: 7vw;
 }
 
 .ur{
     /* margin-left: 65vw; */
-    width: 16%;
+    width: 8vw;
 }
 .sat{
     /* margin-left: 65vw; */
-    width: 20%;
+    width: 9vw;
 }
 .sun{  
     /* margin-left: 65vw; */
-    clip-path: inset(0 0 70% 0);
+    clip-path: inset(0 0 33vw 0);
     margin-top:1.0980966325036603vw ;
     z-index: 0;
 }
 .jup{
     /* margin-left: 65vw; */
-    width: 17%;
+    width: 9vw;
 }
 .mars{
     /* margin-left: 65vw; */
-    width: 7%;
+    width: 4vw;
     margin-top: 1.0248901903367496vw;
 }
 .ert{
     /* margin-left: 65vw; */
-    width: 16%;
+    width: 10vw;
 }
 .vns{
     /* margin-left: 65vw; */
-    width: 15%;
+    width: 8vw;
 }
 .merc{
     /* margin-left: 65vw; */
-    width: 11%;
+    width: 5vw;
 }
 .grabbable{
     margin-right: auto;
 }
-@media all and (max-width:895px){
+ @media all and (min-width:895px){
     
-  .plan{
-    margin-right:-15vw;
-    /* align-items: center; */
+  .sun{
+    width: 48vw;
   }
-
+ 
     
+} 
+@media  all and (max-width:895px) {
+    .plan{
+        margin-left: 12vw;
+    }
 }
+@media all and (max-width:730px){
+   
+   .sun{
+    width: 60vw;
+   }
+  
+
+  
+      
+  }
 

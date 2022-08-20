@@ -18,7 +18,7 @@
     font-family: 'Arima', cursive;
     margin-left: 6.5vw;
     margin-right: 5vw;
-    font-size: 22px;
+    font-size: 1.5vw;
   }
 
   .tpi img{
@@ -26,5 +26,18 @@
     margin-right: 4vw;
     width: 30vw;
   }
+
+  /* @media all and (max-width:1300px) and (min-width:1200px){
+    .tpi img{
+      width:10vw;
+
+    } */
+   
+  /* } */
+  /* @media all and (max-width:1100px){
+    .tpi img{
+      width:40px;
+    }
+  } */
 
   
