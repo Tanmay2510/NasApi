@@ -37,10 +37,10 @@
 .box2 {
     z-index: 1;
     margin: 0 auto;
+    /* margin-bottom: 2vw; */
     width: 19rem;
     height: 26rem;
     background: rgba(16,18,27,0.4);
-    /* background: rgba(255,255,255 ,0.4); */
 
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 0.7320644216691069vw;
@@ -59,4 +59,10 @@
 }
 .p4{
     margin-top: 0.36603221083455345vw;
+}
+
+ @media all and (max-width:900px){
+     .box2{
+        margin-bottom: 5vw;
+    } 
 }

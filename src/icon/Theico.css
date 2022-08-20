@@ -1,7 +1,12 @@
 .theico{
-    margin-right: 30px;
-    margin-left: -70px;
+    margin-right: 2.1961932650073206vw;
+    margin-left: -5.124450951683748vw;
     z-index: 1;
     cursor: pointer;
     background-color: transparent !important;
 }
+/* @media all and (max-width:850px) {
+    .theico{
+        width:4vw;
+    }
+} */

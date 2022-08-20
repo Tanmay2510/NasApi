@@ -48,5 +48,16 @@
     /* margin-left: 65vw; */
     width: 11%;
 }
+.grabbable{
+    margin-right: auto;
+}
+@media all and (max-width:895px){
+    
+  .plan{
+    margin-right:-15vw;
+    /* align-items: center; */
+  }
 
+    
+}
 

@@ -19,4 +19,13 @@
     align-items: center;
 }
 
+@media all and (max-width:900px) {
+    .bggg{
+        flex-direction: column;
+        margin-top:15vw ;
+        /* margin-bottom:10px; */
+    }
+ 
+}
+
 

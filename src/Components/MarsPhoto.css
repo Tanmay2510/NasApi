@@ -27,3 +27,9 @@
     background-size: cover;
   
 }
+@media all and (max-width:950px){
+    .ath{
+        display: grid;
+        grid-column: auto;
+    }
+}

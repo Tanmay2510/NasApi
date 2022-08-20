@@ -6,6 +6,9 @@
     margin-top: 2vw;
     color:white;
 }
+/* .theico{ */
+    /* position: fixed; */
+/* } */
 .theot{
     z-index: 1;
 }
@@ -42,3 +45,13 @@
     display: none;
 }
 
+@media all and (max-width:895px){
+    .sosPcon{
+        width: 90vw;
+        height: 100vw;
+        margin-bottom: -60vw;
+    }
+    .sosp{
+        line-height: 2vw;
+    }
+}

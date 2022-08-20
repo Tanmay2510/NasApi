@@ -28,7 +28,7 @@ function AnotherNav() {
     <div className='icons'>
     <Theico />
     </div>
-    <h2 onClick={navv}>NAPP</h2>
+    <h2 onClick={navv} className="anav">NAPP</h2>
     </div>
     <Draggable>
     <img src={mars} alt="mars"></img>

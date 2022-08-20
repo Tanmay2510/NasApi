@@ -21,7 +21,6 @@ function Nav() {
       <div className="bggg b" >
 
 
-        
         <Navcard
         name="/MarsPhoto"
         hd="Mars Rover"
@@ -37,6 +36,7 @@ function Nav() {
                sr={mar}
                wimg={marp}
         />
+
         <Navcard 
         name="/APOD"
         hd="APOD"
@@ -46,6 +46,7 @@ function Nav() {
         wimg="
         APOD: Astronomy Picture of the DayEach day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer."      
         />
+
         <Navcard 
         name="/NEOW"
         hd="Asteroids"
@@ -55,6 +56,7 @@ function Nav() {
         sr={neow}
         wimg={astp}
         /> 
+
       </div>
      <Bgsvg />
      <Bgsvg />

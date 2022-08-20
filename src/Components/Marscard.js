@@ -25,7 +25,7 @@ function Marscard(props) {
       ].join(','),
   },});
   return (
-    <motion.div  whileHover={{scale:1.2,transition: { duration: 0.3}}}>
+    <motion.div  whileHover={{scale:1.2,transition: { duration: 0.3}}} style={{marginBottom:"4vw"}}>
     <ThemeProvider theme={theme}>
    
     <Card sx={{ maxWidth: 345 }}  >
