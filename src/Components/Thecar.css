@@ -15,23 +15,61 @@
     visibility: hidden;
   }
   
-  
+  .carousel-inner{
+    height: 35vw;
+  }
   
 
-.carousel {
-  /* width:900px;
-  height:500px; */
-  margin: auto;
-}
 .carousel-control-prev-icon {
   margin-left: -5vw;
+  width: 6vw;
 }
 .carousel-control-next-icon {
   margin-right: -5vw;
+  width: 6vw;
+
 }
-@media (max-width: 900px) {
-  .carousel {
-    width:95vw;
+@media all and (max-width:550px){
+  .carousel-inner{
+    height: 40vw;
+  }
+  .carousel-control-next-icon {
+    margin-right: -7vw;
+  
+  }
+  .carousel-control-prev-icon {
+  margin-left: -7vw;
+
   }
 }
-  
+@media all and (max-width:375px){
+  .carousel-inner{
+    height: 49vw;
+  }
+  .carousel-control-next-icon {
+      width: 10px;
+  }
+  .carousel-control-prev-icon {
+
+  width: 10px;
+}
+}
+/* @media all and (max-width:342px){
+  .carousel-inner{
+    height: 53vw;
+  }
+  */
+ 
+/* } */
+@media all and (max-width:270px) {
+  .carousel-inner{
+    height: 55vw;
+  }
+ 
+}
+@media all and (max-width:200px) {
+  .carousel-inner{
+    height: 65vw;
+  }
+ 
+}

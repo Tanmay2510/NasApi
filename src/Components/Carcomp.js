@@ -8,7 +8,9 @@ export var browse;
 function Carcomp(props) {
   const navigate = useNavigate();
   var bust = {
-    width:"20vw",
+    width:"25vw",
+    height:"2.5vw",
+    fontSize:"1vw"
   }
   const  navig = () => {
        browse="/"+props.namee;
