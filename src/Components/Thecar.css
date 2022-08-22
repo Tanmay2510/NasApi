@@ -7,9 +7,9 @@
 
   .thepl{
     font-family: 'Arima', cursive;
-    padding-top: 15px;
+    padding-top: 1.0980966325036603vw;
     color: black;
-    font-size: 55px;
+    font-size: 4.2vw;
   }
   .carousel-indicators{
     visibility: hidden;
@@ -24,15 +24,14 @@
   margin: auto;
 }
 .carousel-control-prev-icon {
-  margin-left: -30%;
+  margin-left: -5vw;
 }
 .carousel-control-next-icon {
-  margin-right: -40%;
+  margin-right: -5vw;
 }
 @media (max-width: 900px) {
   .carousel {
-    width:auto;
-    height:auto;
+    width:95vw;
   }
 }
   

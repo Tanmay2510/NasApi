@@ -5,47 +5,36 @@
     margin-top: 4.392386530014641vw;
     
 }
-/* .grabbable{
-    margin-right: 70%;
-} */
+
 .nept{
-    /* margin-left: 65vw; */
     width: 7vw;
 }
 
 .ur{
-    /* margin-left: 65vw; */
     width: 8vw;
 }
 .sat{
-    /* margin-left: 65vw; */
     width: 9vw;
 }
 .sun{  
-    /* margin-left: 65vw; */
     clip-path: inset(0 0 33vw 0);
     margin-top:1.0980966325036603vw ;
     z-index: 0;
 }
 .jup{
-    /* margin-left: 65vw; */
     width: 9vw;
 }
 .mars{
-    /* margin-left: 65vw; */
     width: 4vw;
     margin-top: 1.0248901903367496vw;
 }
 .ert{
-    /* margin-left: 65vw; */
     width: 10vw;
 }
 .vns{
-    /* margin-left: 65vw; */
     width: 8vw;
 }
 .merc{
-    /* margin-left: 65vw; */
     width: 5vw;
 }
 .grabbable{
