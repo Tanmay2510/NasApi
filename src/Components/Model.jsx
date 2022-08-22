@@ -12,7 +12,7 @@ import Neptune from './planets/Neptune'
 import Uranus from './planets/Uranus'
 import { browse } from './Carcomp';
 const CanvasContainer = styled.div`
-width:50%;
+width:50vw;
 `;
 
 

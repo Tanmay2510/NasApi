@@ -32,7 +32,8 @@
     margin-top: 1.0980966325036603vw;
 }
 .wholename h2{
-    margin-top:-0.7320644216691069vw;
+    font-size: 2vw;
+    margin-top:-0.7vw;
 }
 .bg{
     background-color: black !important;
@@ -47,6 +48,7 @@
     margin-left:2.1vw;
     font-size: 1.2445095168374818vw;
     width: 50%;
+    /* height: 100v; */
     margin-right: 0.7320644216691069vw;
     font-family: 'Merriweather', serif;
     background-color: black;
@@ -57,3 +59,5 @@
     font-size:  2.562225475841874vw;
     margin-bottom: -1.4641288433382138vw;
 }
+
+

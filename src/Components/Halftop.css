@@ -7,9 +7,7 @@
     color:white;
     font-size:3.4vw;
 }
-/* .theico{ */
-    /* position: fixed; */
-/* } */
+
 .theot{
     z-index: 1;
 }
@@ -36,7 +34,6 @@
 }
 
 .sosPcon{
-    /* background-color: rgb(199, 15, 15); */
     width:50vw;
     height:70vw;
     overflow: scroll;
@@ -56,3 +53,4 @@
         line-height: 2vw;
     }
 }
+

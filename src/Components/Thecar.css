@@ -54,22 +54,23 @@
   width: 10px;
 }
 }
-/* @media all and (max-width:342px){
-  .carousel-inner{
-    height: 53vw;
-  }
-  */
- 
-/* } */
-@media all and (max-width:270px) {
-  .carousel-inner{
-    height: 55vw;
-  }
- 
-}
+
+
 @media all and (max-width:200px) {
   .carousel-inner{
     height: 65vw;
   }
  
-}
+} 
+@media all and (max-width:180px) {
+  .carousel-inner{
+    height: 70vw;
+  }
+ 
+} 
+/* @media all and (max-width:173px) {
+  .carousel-inner{
+    height: 75vw;
+  }
+ 
+}  */

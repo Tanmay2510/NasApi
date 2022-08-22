@@ -49,9 +49,9 @@ function Basicbg() {
       <h2>{hh}:</h2>
       <br></br>{cc}</p>
       </motion.div>
-     
       <Model />
-     </div>
+
+      </div>
      <hr  className="hh"></hr>
 
      <Lowernav />

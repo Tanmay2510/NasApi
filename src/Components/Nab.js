@@ -9,8 +9,8 @@ import Theico from '../icon/Theico';
 function Nab() {
   const navstyle=
     {
-      fontSize:'30px',
-      marginTop:'2px',
+      fontSize:'3vw',
+      marginTop:'0.14641288433382138vw',
       color:'white',
       fontFamily: 'Gentium Book Plus, serif'
     }
@@ -18,8 +18,8 @@ function Nab() {
       {
         
           color:'white',
-          marginRight:'70px',
-          fontSize:'20px',
+          marginRight:'5.124450951683748vw',
+          fontSize:'1.4641288433382138vw',
           fontFamily: 'Gentium Book Plus, serif'
           
       
@@ -38,7 +38,7 @@ function Nab() {
       style={navstyle}>NAPP</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto" style={{ marginTop:'5px',marginRight:'-30px'}} >
+        <Nav className="ms-auto" style={{ marginTop:'0.36603221083455345vw',marginRight:'-2.1961932650073206vw'}} >
           <Nav.Link  
           href="#here"
           className="hov" style={linkstyle}
