@@ -9,9 +9,9 @@
     width: 5.124450951683748vw;
     background-color: black !important; 
 }
+
 .hh{
-        margin: 0.7320644216691069vw 0;
-        height:auto;
+        margin: 0.78vw 0;
         background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, rgb(255, 255, 255)));
     
 }
@@ -46,7 +46,7 @@
     color:white;
     text-align: left;
     margin-left:2.1vw;
-    font-size: 1.2445095168374818vw;
+    font-size: 1.5vw;
     width: 50%;
     /* height: 100v; */
     margin-right: 0.7320644216691069vw;
@@ -59,5 +59,120 @@
     font-size:  2.562225475841874vw;
     margin-bottom: -1.4641288433382138vw;
 }
+@media all and (max-width:800px){
+  .themid{
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+    width: 90vw;
+    font-size: 1.8vw;
+  }
+}
+@media all and (max-width:680px){
+    .content{
+        font-size: 2vw;
+    }
+    .content h2{
+        font-size: 4vw;
+    }
+}
+@media all and (max-width:650px){
+   .wholename h2{
+    margin-top: -2vw;
+   }
+   .theico{
+    margin-top: -1.5vw;
+   }
+}
+@media all and (max-width:500px){
+    .wholename h2{
+     margin-top: -3vw;
+    }
+    .theico{
+     margin-top: -2vw;
+     width: 1.8vw;
+    }
+}
+@media all and (max-width:402px){
+    .wholename h2{
+     margin-top: -3.2vw;
+    }
+    .theico{
+     margin-top: -2.2vw;
+    }
+}
+@media all and (max-width:390px){
+  .theicons{
+    margin-top: -1vw;
+    margin-bottom: 2vw;
 
-
+  }
+}
+@media all and (max-width:330px){
+    .theicons{
+      margin-top: -1vw;
+      margin-bottom: 2.4vw;
+  
+    }
+  }
+  @media all and (max-width:300px){
+    .theicons{
+      margin-top: -1vw;
+      margin-bottom: 3vw;
+  
+    }
+    
+  }
+  @media all and (max-width:276px){
+    .theicons{
+      margin-top: -1vw;
+      margin-bottom: 5vw;
+  
+    }
+    
+  }
+  @media all and (max-width:230px){
+    .theicons{
+      margin-bottom: 6vw;
+  
+    }
+    .wholename h2{
+        margin-top: -4vw;
+       }
+    
+  }
+  @media all and (max-width:200px){
+    .theicons{
+      margin-bottom: 7vw;
+  
+    }
+    .wholename h2{
+        margin-top: -5vw;
+       }
+       .theico{
+        width: 2.5vw;
+       }
+    
+  }
+  @media all and (max-width:166px){
+    .theicons{
+      margin-bottom: 10vw;
+  
+    }
+    .wholename h2{
+        font-size: 2vw;
+        margin-top: -5.5vw;
+       }
+    
+  }
+  @media all and (max-width:140px){
+    .theicons{
+      margin-bottom: 12vw;
+  
+    }
+    .wholename h2{
+        margin-top: -7.2vw;
+       }
+    
+  }

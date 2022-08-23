@@ -13,6 +13,21 @@ import Uranus from './planets/Uranus'
 import { browse } from './Carcomp';
 const CanvasContainer = styled.div`
 width:50vw;
+
+@media (max-width:800px){
+     width:90vw;
+     height:80vw;
+}
+@media (max-width:536px){
+  width:90vw;
+  height:75vh;
+}
+
+@media (max-width:320px){
+  width:90vw;
+  height:80vh;
+}
+
 `;
 
 
