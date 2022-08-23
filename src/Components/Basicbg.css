@@ -4,8 +4,9 @@
     display: flex ;
     justify-content: space-evenly;
     background-color: black;
+
 }.theicons img{
-    margin-top: 0.7320644216691069vw;
+    margin-top:1vw;
     width: 5.124450951683748vw;
     background-color: black !important; 
 }
