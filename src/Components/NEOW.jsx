@@ -163,11 +163,11 @@ function NEOW() {
             :
             <div className="imbg">
             <h1>Get information about Near Earth Objects(NEO) </h1>
-            <p style={{fontSize:'1.9em'}}>Enter Date</p>
+            <p >Enter Date</p>
             <input type="text" className="in" placeholder="YYYY-MM-DD" onChange={handlee}  onKeyPress={datset}></input>
             </div>
         }
-        <div style={{marginTop:"-50px"}}>
+        <div style={{marginTop:"-4vw"}}>
         <Lowernav />
         </div>
 

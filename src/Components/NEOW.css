@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 .imbg{
     color:wheat;
-    padding-top: 15vw;
-    height: 86.5vh;
+    height: 90vh;
+    padding-top: 28vh;
     background-image: url("../images/stk.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.imbg p{
+    font-size: 2.5vw;
+}
 .ca h1{
     color:rgb(59, 58, 58);
     padding-top: 1.4641288433382138vw;
+}
+.imbg h1{
+    font-size: 3vw;
 }
 .side{
     width:5vw;
@@ -41,13 +47,15 @@
     color:wheat;
 }
 .neo{
-    width: 100%;
      /* //99.8 */
     font-family: 'Exo', sans-serif; 
 }
 .in{
-    border-radius:3.6603221083455346vw ;
+    border-radius:3vw ;
+    width: 18vw;
+    height: 3vw;
     padding:.5rem 1.5rem;
+    font-size: 1.5vw;
     text-align: center;  
     color: wheat; 
     border: rgb(201, 124, 201) solid 1px;
@@ -75,10 +83,10 @@
 	background: linear-gradient(-180deg,#b1699f,#e263c2, #ee7752, #e73c7e,#e73cbc,#e417b0,#853872);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    min-height: 175vh;
-    height: 100%;
-    width:100%;
+    height: 90vw;
+    width:100vw;
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 50% 100%;
@@ -90,11 +98,113 @@
 		background-position: 50% 100%;
 	}
 }
-@media (max-width:1125px){
-   .midsi{
-    margin-top:-100%;
+@media all and (max-width:832px){
+    .wholename h2{
+     margin-top: -2vw;
+    }
+    .theico{
+     margin-top: -1.5vw;
+    }
+    .imbg{
+        height: 80vw;
+    }
+    .imbg h1{
+        font-size:8vw;
+    }
+    .imbg p{
+        font-size: 5vw;
+    }
+    .in{
+        width: 25vw;
+        height:5vw;
+    }
+ }
+@media all and (max-width:650px){
+    .wholename h2{
+     margin-top: -2vw;
+    }
+    .theico{
+     margin-top: -1.5vw;
+    }
+   
+ }
+ @media all and (max-width:554px){
+    .wholename h2{
+     margin-top: -2.2vw;
+    }
+    .theico{
+     margin-top: -1.9vw;
+    }
+ }
+ @media all and (max-width:525px){
+     .wholename h2{
+      margin-top: -4vw;
+     }
+     .theico{
+      margin-top: -3vw;
+      width: 1.8vw;
+     }
+     .imbg{
+        height: 100vh;
+     }
+     .theicons{
+        padding-bottom: 8vw;
+     }
+ }
+ @media all and (max-width:422px){
+     .wholename h2{
+      margin-top: -4.5vw;
+     }
+     .imbg{
+        padding-top:55vw;
+     }
+     .theico{
+      margin-top: -3.5vw;
+     }
+ }
+ /* @media all and (max-width:390px){
+   /* .imbg{
+    
+   } */
+   /* .theicons img{
+        margin-bottom: 10vw;
+   } */
+    
+    
+  /* } */
+   @media all and (max-width:230px){
+   
+     .wholename h2{
+         margin-top: -4vw;
+        }
+     
    }
-}
+   @media all and (max-width:200px){
+     
+     .wholename h2{
+         margin-top: -5vw;
+        }
+        .theico{
+         width: 2.5vw;
+        }
+     
+   }
+   @media all and (max-width:166px){
+     
+     .wholename h2{
+         font-size: 2vw;
+         margin-top: -5.5vw;
+        }
+     
+   }
+   @media all and (max-width:140px){
+    
+     .wholename h2{
+         margin-top: -7.2vw;
+        }
+     
+   }
+
 
 
 
