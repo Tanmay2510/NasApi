@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 .imbg{
     color:wheat;
-    height: 90vh;
+    height: 100vh;
     padding-top: 28vh;
     background-image: url("../images/stk.svg");
     background-position: center;
@@ -16,7 +16,7 @@
     padding-top: 1.4641288433382138vw;
 }
 .imbg h1{
-    font-size: 3vw;
+    font-size: 5vw;
 }
 .side{
     width:5vw;
@@ -45,6 +45,7 @@
 
 .imbg p{
     color:wheat;
+    font-size: 4vw;
 }
 .neo{
      /* //99.8 */
@@ -55,7 +56,7 @@
     width: 18vw;
     height: 3vw;
     padding:.5rem 1.5rem;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align: center;  
     color: wheat; 
     border: rgb(201, 124, 201) solid 1px;
@@ -83,8 +84,7 @@
 	background: linear-gradient(-180deg,#b1699f,#e263c2, #ee7752, #e73c7e,#e73cbc,#e417b0,#853872);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-    height: 90vw;
-    width:100vw;
+    height:max-content;
 }
 
 @keyframes gradient {
@@ -98,6 +98,64 @@
 		background-position: 50% 100%;
 	}
 }
+.ca h1{
+    font-size: 4vw;
+}
+@media all and (max-width:530px){
+    .midsi{
+
+        margin-top: -100vw;
+    }
+  }
+  @media all and (max-width:810px) {
+    .midsi{
+
+        margin-top: -90vw;
+    }
+  }
+  @media all and (max-width:600px) {
+    .midsi{
+
+        margin-top: -99vw;
+    }
+  }
+  @media all and (max-width:420px){
+    .midsi{
+
+        margin-top: -110vw;
+    }
+  }
+  @media all and (max-width:370px){
+    .midsi{
+
+        margin-top: -126vw;
+    }
+  }
+  @media all and (max-width:320px){
+    .midsi{
+
+        margin-top: -136vw;
+    }
+  }
+  @media all and (max-width:280px){
+    .midsi{
+
+        margin-top: -156vw;
+    }
+  }
+  @media all and (max-width:250px){
+    .midsi{
+
+        margin-top: -180vw;
+    }
+  }
+  @media all and (max-width:200px){
+    .midsi{
+
+        margin-top: -210vw;
+    }
+    
+  }
 @media all and (max-width:832px){
     .wholename h2{
      margin-top: -2vw;
@@ -106,7 +164,7 @@
      margin-top: -1.5vw;
     }
     .imbg{
-        height: 80vw;
+        height: 100vh;
     }
     .imbg h1{
         font-size:8vw;
@@ -126,15 +184,22 @@
     .theico{
      margin-top: -1.5vw;
     }
+    .imbg{
+        height: 100vh;
+    }
    
  }
- @media all and (max-width:554px){
+
+ @media all and (max-width:575px){
     .wholename h2{
      margin-top: -2.2vw;
     }
     .theico{
      margin-top: -1.9vw;
     }
+    .imbg{
+        height: 100vh;
+     }
  }
  @media all and (max-width:525px){
      .wholename h2{
@@ -162,31 +227,30 @@
       margin-top: -3.5vw;
      }
  }
- /* @media all and (max-width:390px){
-   /* .imbg{
-    
-   } */
-   /* .theicons img{
-        margin-bottom: 10vw;
-   } */
-    
-    
-  /* } */
-   @media all and (max-width:230px){
+ @media all and (max-width:390px){
    
-     .wholename h2{
-         margin-top: -4vw;
-        }
+    .theicons {
+        margin-bottom: -1vw;
+        padding-bottom: 10vw;
+   } 
+    
+    
+   }
+   @media all and (max-width:280px){
+   
+     .theicons{
+        padding-bottom: 13vw;
+     }
      
    }
    @media all and (max-width:200px){
      
-     .wholename h2{
-         margin-top: -5vw;
-        }
-        .theico{
-         width: 2.5vw;
-        }
+    .wholename h2{
+        margin-top: -5.5vw;
+    }
+  .theicons{
+    padding-bottom: 14vw;
+  }
      
    }
    @media all and (max-width:166px){
