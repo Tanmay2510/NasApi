@@ -13,6 +13,7 @@
 
 }
 .forfont{
+    min-height: 100vh;
     height: auto;
     overflow: hidden;
     font-family: 'Cormorant Upright', serif;
@@ -100,11 +101,7 @@
         }
         
         }
-        @media all and (max-width:280px){
-            .forfont{
-                height: 100vh;
-            }
-        }
+     
     @media all and (max-width:215px){
 
        .forfont{

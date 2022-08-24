@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 .imbg{
     color:wheat;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    height: auto;
     padding-top: 28vh;
     background-image: url("../images/stk.svg");
     background-position: center;
@@ -229,7 +229,13 @@
     
    }
    @media all and (max-width:280px){
-   
+    
+        .in{
+            text-align: left;
+            padding-right: 2vw;
+            padding-left: 2vw;
+            font-size: 2vw;
+        }
      .theicons{
         padding-bottom: 13vw;
      }
