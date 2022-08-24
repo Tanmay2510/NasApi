@@ -58,9 +58,15 @@
 }
 
 }
-@media all and (max-width:500px){
+@media all and (max-width:675px){
     .contp p{
-        font-size: 2.8vw;
+        font-size: 3vw;
+    }
+
+}
+@media all and (max-width:525px){
+    .contp p{
+        font-size: 3.5vw;
     }
     .theh{
         font-size: 5.4vw;
@@ -77,13 +83,19 @@
     }
     
     }
+    @media all and (max-width:475px){
+        .contp p{
+            font-size: 4vw;
+        }
+    
+    }
 @media all and (max-width:395px){
 
     .forfont{
         height: auto;
     }
     .contp p{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .theh{
         font-size: 6vw;
@@ -94,7 +106,7 @@
 
        
         .contp p{
-            font-size: 4.2vw;
+            font-size: 5.5vw;
         }
         .theh{
             font-size: 6.2vw;
@@ -102,13 +114,13 @@
         
         }
      
-    @media all and (max-width:215px){
+    @media all and (max-width:240px){
 
        .forfont{
         height: 100vh;
        }
        .contp p{
-        font-size: 5vw;
+        font-size: 6vw;
     }
     .theh{
         font-size: 7vw;
