@@ -39,11 +39,11 @@ function LinkPlanet() {
         </div>
         <div className="belline">
         <p className="belp">Image Date:{data ? data.date :null}</p>
-        <p>Image Copyright: ©   {data.copyright ?data.copyright:"NASA"}</p>
+        <p className="bl">Image Copyright: ©   {data.copyright ?data.copyright:"NASA"}</p>
         </div>
      </div>
 
-        <div style={{marginTop:"-10px"}}>
+        <div style={{marginTop:"-0.1vw"}}>
         <hr  className="hhh"></hr>
 
 <Lowernav />

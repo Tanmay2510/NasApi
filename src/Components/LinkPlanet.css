@@ -13,6 +13,8 @@
 
 }
 .forfont{
+    height: auto;
+    overflow: hidden;
     font-family: 'Cormorant Upright', serif;
     background-color: rgb(208, 164, 230);
 }
@@ -31,10 +33,100 @@
     font-size: 1.4641288433382138vw;
 }
 .belp{
-
+    font-size: 1.4vw;
     margin-right: 47.58418740849195vw;
+}
+.bl{
+    font-size: 1.4vw;
 }
 .timg{
 
     width: 90vw;
 }
+
+@media all and (max-width:865px){
+
+.contp p{
+    font-size: 2.5vw;
+}
+.theh{
+    font-size: 5vw;
+}
+.belline p{
+    font-size: 1.6vw;
+}
+
+}
+@media all and (max-width:500px){
+    .contp p{
+        font-size: 2.8vw;
+    }
+    .theh{
+        font-size: 5.4vw;
+    }
+    .forfont{
+        height:auto;
+    }
+
+    .timg{
+        width: 92vw;
+    }
+    .belline p{
+        font-size: 1.8vw;
+    }
+    
+    }
+@media all and (max-width:395px){
+
+    .forfont{
+        height: auto;
+    }
+    .contp p{
+        font-size: 4vw;
+    }
+    .theh{
+        font-size: 6vw;
+    }
+    
+    }
+    @media all and (max-width:290px){
+
+       
+        .contp p{
+            font-size: 4.2vw;
+        }
+        .theh{
+            font-size: 6.2vw;
+        }
+        
+        }
+        @media all and (max-width:280px){
+            .forfont{
+                height: 100vh;
+            }
+        }
+    @media all and (max-width:215px){
+
+       .forfont{
+        height: 100vh;
+       }
+       .contp p{
+        font-size: 5vw;
+    }
+    .theh{
+        font-size: 7vw;
+    }
+        
+        }
+        @media all and (max-width:170px){
+           .forfont{
+            height: 100vh;
+           }
+             
+             }
+             @media all and (max-width:150px){
+                    .contp p{
+                        font-size: 6vw;
+                    }
+                  
+                  }
