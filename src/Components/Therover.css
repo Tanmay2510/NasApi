@@ -5,7 +5,7 @@
 .morph{
     margin:auto;
     width: 90vw;
-    min-height: 65vh;
+    min-height:60vh;
     height: auto;
     background: rgba(20, 20, 20, 0.4);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -112,7 +112,12 @@
 }
 ::placeholder{
     color:rgb(233, 216, 216); 
-}       
+}   
+@media all and (max-width:1250px){
+    .rovph{
+        width: 50vw;
+    }
+}    
 @media all and (max-width:900px){
     .bott p{
         font-size: 1.8vw;
@@ -192,12 +197,10 @@
         font-size: 3.5vw;
     }
     .fo{
-        font-size: 2.8vw;
+        font-size: 2.6vw;
     }
   
-    .morph{
-        margin-bottom: -25vw;
-    }
+ 
   
 }
 
@@ -208,9 +211,9 @@
     .part img{
         margin-right: 2vw;
     }
-    .morph{
+    /* .morph{
         margin-bottom: -50vw;
-    }
+    } */
     
 }
 
@@ -223,9 +226,7 @@
     .par{
         margin-top: 10vw;
     }
-    .morph{
-        margin-bottom: -70vw;
-    }
+
     
 }
 
