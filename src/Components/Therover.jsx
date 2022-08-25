@@ -26,7 +26,7 @@ const [playSlide, setPlaySlide] = useState(false);
         height:"auto",
         backgroundSize:"cover",
         backgroundRepeat:"no-repeat",
-        backgroundPosition:"center center"
+        backgroundPosition:"center center",
     }
  
     const dateset =(event) => {

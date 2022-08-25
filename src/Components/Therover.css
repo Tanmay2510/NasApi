@@ -5,7 +5,7 @@
 .morph{
     margin:auto;
     width: 90vw;
-    min-height: 100vh;
+    min-height: 65vh;
     height: auto;
     background: rgba(20, 20, 20, 0.4);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -124,7 +124,6 @@
         font-size: 1.5vw;
         height: 4vw;
         width: 20vw;
-        margin-bottom: 4vw;
     }
 }
 @media all and (max-width:855px){
@@ -143,7 +142,6 @@
         font-size: 2vw;
         height: 4.7vw;
         width: 20.7vw;
-        margin-bottom: 4.7vw;
     }
     .partc p{
         font-size: 2.3vw;
@@ -164,11 +162,7 @@
         width: 50vw;
     }
 }
-@media all and (max-width:540px){
-    .inp{
-     margin-bottom: 15vw;
-    }
-}
+
  
 @media all and (max-width:500px){
     .part{
@@ -187,6 +181,9 @@
     .ins p{
         font-size: 3vw;
     }
+    .morph{
+        margin-bottom: -20vw;
+    }
   
 }
 @media all and (max-width:450px){
@@ -197,9 +194,9 @@
     .fo{
         font-size: 2.8vw;
     }
-    .inp{
-        margin-top: 5vw;
-       margin-bottom: 18vw;
+  
+    .morph{
+        margin-bottom: -25vw;
     }
   
 }
@@ -211,21 +208,14 @@
     .part img{
         margin-right: 2vw;
     }
-    .inp{
-        margin-bottom: 24vw;
+    .morph{
+        margin-bottom: -50vw;
     }
+    
 }
-@media all and (max-width:420px){
-    .inp{
-        margin-bottom: 26vw;
-    }
-}
-@media all and (max-width:390px){
-   
-    .inp{
-        margin-bottom: 30vw;
-    }
-}
+
+
+
 @media all and (max-width:370px){
     .partc p{
         margin-left:1vw;
@@ -233,39 +223,14 @@
     .par{
         margin-top: 10vw;
     }
-    .inp{
-        margin-bottom: 32vw;
+    .morph{
+        margin-bottom: -70vw;
     }
-}
-@media all and (max-width:360px){
-  
-    .inp{
-        margin-bottom: 38vw;
-    }
-}
-@media all and (max-width:345px){
     
-   
-    .inp{
-        margin-bottom: 45vw;
-    }
 }
+
 @media all and (max-width:330px){
     .partc p{
         font-size:3.5vw ;
-    }
-   
-    .inp{
-        margin-bottom: 50vw;
-    }
-}
-@media all and (max-width:290px){
-    .inp{
-        margin-bottom:65vw;
-    }
-}
-@media all and (max-width:260px){
-    .inp{
-        margin-bottom:80vw;
     }
 }
