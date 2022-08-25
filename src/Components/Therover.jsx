@@ -26,7 +26,7 @@ const [playSlide, setPlaySlide] = useState(false);
         height:"auto",
         backgroundSize:"cover",
         backgroundRepeat:"no-repeat",
-
+        backgroundPosition:"center center"
     }
  
     const dateset =(event) => {
@@ -121,7 +121,7 @@ const [playSlide, setPlaySlide] = useState(false);
            </div>
         : null} </motion.div>
     : 
-    <div>
+    <div className='par'>
 
     <div className='part'>
                 <div className='partc'>
