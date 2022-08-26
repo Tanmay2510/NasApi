@@ -18,7 +18,7 @@ function Navcard(props) {
         isopen ? 
         <motion.div   initial={{opacity:0}}
         animate={{opacity:1}}
-        transition={{duration:0.5}}>
+        transition={{duration:0.5}} className="otherside">
         <p >{props.pp}</p>
         <p >{props.p2}</p>
         {
@@ -46,7 +46,7 @@ function Navcard(props) {
 
         </motion.div>
         :
-        <div >
+        <div className="inside" >
     <motion.img  initial={{opacity:0}}
     animate={{opacity:1}}
     transition={{duration:0.5}}   src={props.sr}></motion.img>

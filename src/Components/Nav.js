@@ -10,6 +10,11 @@ import {motion } from "framer-motion"
 import Lowernav from './Lowernav.js';
 function Nav() {
 
+  // let x = window.screen.availWidth;
+  // if(x<1000){
+    //  <Bgsvg />
+    //  <Bgsvg />
+  // }
   const astp="Data for near-earth Asteroid information. You can: search for Asteroids based on their closest approach date to Earth, and look up a specific Asteroid with its NASA JPL.";
   const marp="Get access to photos from the rover that are present on mars.Rovers help scientists in their quest to understand what different parts of the planet are made of."; 
   return (
@@ -58,9 +63,9 @@ function Nav() {
         /> 
 
       </div>
-     <Bgsvg />
-     <Bgsvg />
-     <div style={{marginTop:"-40px"}}>
+     
+
+     <div style={{marginTop:"-2.5vw"}}>
      <Lowernav />
      </div>
 

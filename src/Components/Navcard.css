@@ -22,6 +22,7 @@
 .box2 li{
     padding-left: 3.6603221083455346vw;
     text-align: left;
+    font-size: 1.2vw;
     color:antiquewhite;
 }
 .box2 p{
@@ -33,13 +34,15 @@
     color: antiquewhite;
     font-size: 1.2445095168374818vw;
 }
-  
+  .inside p{
+    margin-top: 1vw;
+  }
 .box2 {
     z-index: 1;
     margin: 0 auto;
     /* margin-bottom: 2vw; */
-    width: 19rem;
-    height: 26rem;
+    width: 23vw;
+    height: 32vw;
     background: rgba(16,18,27,0.4);
 
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -56,13 +59,141 @@
     color: antiquewhite;
     text-align: center;
     cursor: pointer;
+    font-size: 3vw;
 }
 .p4{
     margin-top: 0.36603221083455345vw;
 }
 
  @media all and (max-width:900px){
-     .box2{
-        margin-bottom: 5vw;
-    } 
+     .otherside p {
+        font-size: 1.5vw;
+     }
+    .otherside li{
+        font-size: 1.5vw;
+     }
+    .bu{
+        font-size: 1.4vw;
+        width: 21vw;
+    }
+    .box2 img{
+        width:20vw;
+    }
+    .inside p{
+        margin-top: 2vw;
+        font-size:1.6vw;
+    }
+    .box2 h1{
+        font-size: 2.5vw;
+    }
+    .box2{
+        height: 42vw;
+        width: 25vw;
+    }
 }
+@media all and (max-width:700px){
+    .otherside p {
+        font-size: 1.8vw;
+     }
+    .otherside li{
+        font-size: 2vw;
+     }
+    .bu{
+        font-size: 1.4vw;
+        width: 21vw;
+    }
+    .box2 img{
+        width:20vw;
+    }
+    .inside p{
+        font-size:1.9vw;
+    }
+    .box2 h1{
+        font-size: 2.9vw;
+    }
+    .box2{
+        height: 55vw;
+        width: 25vw;
+    }
+   
+}
+@media all and (max-width:470px){
+    .otherside p {
+        font-size: 1.9vw;
+     }
+    .otherside li{
+        font-size: 2.1vw;
+     }
+    .bu{
+        font-size: 1.5vw;
+        width: 21vw;
+    }
+    .box2 img{
+        width:20vw;
+    }
+    .inside p{
+        font-size:2vw;
+    }
+    .box2 h1{
+        font-size: 3.1vw;
+    }
+      .box2{
+        margin-top: 3.5vw;
+        height: 65vw;
+    } 
+    .bu{
+        margin-bottom: 1vw;
+    }
+
+}
+@media all and (max-width:420px) {
+    .otherside p {
+        font-size: 2.2vw;
+     }
+     .otherside li{
+        font-size: 2.2vw;
+     }
+    .bu{
+        font-size: 1.6vw;
+        width: 21vw;
+    }
+    .box2 img{
+        width:22vw;
+    }
+    .inside p{
+        font-size:2.1vw;
+    }
+    .box2 h1{
+        font-size: 3.2vw;
+    }
+    .box2{
+       height: 80vw;
+   }
+   
+
+}  
+@media all and (max-width:390px) {
+    
+    .box2{
+        margin-top: -20vw;
+        height: 90vw;
+   }
+   
+
+}  
+@media all and (max-width:250px) {
+    
+    .bu{
+        margin-bottom: 2vw;
+   }
+   
+
+}  
+@media all and (max-width:220px) {
+    
+   .box2{
+    height: 95vw;
+   }
+   
+
+}  

@@ -1,11 +1,11 @@
 .b{
     aspect-ratio: 960/300;
     width: 100%;
-    min-height: 86.5vh;
-    height: auto;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .ob{
     background-color: rgb(95, 4, 95);
@@ -17,15 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height:100vh;
+
+    height: auto;
 }
 
-@media all and (max-width:900px) {
-    .bggg{
-        flex-direction: column;
-        margin-top:15vw ;
-        /* margin-bottom:10px; */
-    }
- 
-}
+
 
 
