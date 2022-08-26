@@ -22,6 +22,10 @@
     height: auto;
 }
 
-
+@media all and (max-width:650px) and (min-width:620px){
+    .bggg{
+        height: 120vh;
+    }
+}
 
 
