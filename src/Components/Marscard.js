@@ -18,14 +18,14 @@ function Marscard(props) {
 
   const theme = createTheme({
     typography: {
-      fontSize:14,
+      fontSize:"14vw",
       fontFamily: [
         'Cormorant',
         'serif',
       ].join(','),
   },});
   return (
-    <motion.div  whileHover={{scale:1.2,transition: { duration: 0.3}}} style={{marginBottom:"4vw"}}>
+    <motion.div  whileHover={{scale:1.2,transition: { duration: 0.3}}} className="cardstyle">
     <ThemeProvider theme={theme}>
    
     <Card sx={{ maxWidth: 345 }}  >

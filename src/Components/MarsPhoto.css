@@ -8,7 +8,9 @@
 .ath{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1.0980966325036603vw;
+    /* margin:0; */
+    /* margin-left: 5vw; */
+    padding:0;
 }
 .h{
     margin-top:-1.4641288433382138vw;
@@ -21,15 +23,23 @@
         flex-direction: column;
         justify-content:center;
     width:100vw ;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   background: url("../images/bgmars.jpg")  no-repeat center center fixed; 
   
     background-size: cover;
   
 }
-@media all and (max-width:950px){
+.cardstyle{
+    width:200px;
+}
+@media all and (max-width:840px){
     .ath{
-        display: grid;
-        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardstyle{
+        margin-top: 10vh;
     }
 }

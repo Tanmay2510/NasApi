@@ -65,7 +65,7 @@ function Nav() {
       </div>
      
 
-     <div style={{marginTop:"-2.5vw"}}>
+     <div style={{marginTop:"18px"}}>
      <Lowernav />
      </div>
 

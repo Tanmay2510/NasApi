@@ -57,7 +57,7 @@ function MarsPhoto() {
   titl="Perseverance Rover"
   />
 </div>
-<div style={{marginTop:"80px"}}>
+<div style={{marginTop:"5vw"}}>
 <Lowernav />
 </div>
 
