@@ -1,4 +1,4 @@
-import React  from 'react'
+import React ,{useState,useEffect} from 'react'
 import AnotherNav from "./AnotherNav.js"
 import "./Nav.css";
 import Bgsvg from './Bgsvg.js';
@@ -9,15 +9,21 @@ import neow from "../images/navneow.jpg"
 import {motion } from "framer-motion"
 import Lowernav from './Lowernav.js';
 function Nav() {
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 1200);
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 1200);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+  
 
-  // let x = window.screen.availWidth;
-  // if(x<1000){
-    //  <Bgsvg />
-    //  <Bgsvg />
-  // }
   const astp="Data for near-earth Asteroid information. You can: search for Asteroids based on their closest approach date to Earth, and look up a specific Asteroid with its NASA JPL.";
   const marp="Get access to photos from the rover that are present on mars.Rovers help scientists in their quest to understand what different parts of the planet are made of."; 
   return (
+    isDesktop ?
+
     <motion.div
     initial={{opacity:0}}
         animate={{opacity:1}}
@@ -64,8 +70,62 @@ function Nav() {
 
       </div>
      
+       <Bgsvg />
+     <Bgsvg />
+     <div style={{marginTop:"10px"}}>
+     <Lowernav />
+     </div>
 
-     <div style={{marginTop:"18px"}}>
+    </motion.div>
+    : 
+    
+    <motion.div
+    initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.5}} className='ob'>
+    <AnotherNav />
+      <div className="bggg b" >
+
+
+        <Navcard
+        name="/MarsPhoto"
+        hd="Mars Rover"
+      pp="
+      Through this, you can get photos from the rover that are or were present on mars.Rovers are:" 
+      n1="Spirit"
+      n2="Persevarance"
+      n3="Opportunity"
+      n4="Curiosity"
+        but="Go to Mars Photos"
+        p4="
+        Rovers help scientists in their quest to understand what different parts of the planet are made of."
+               sr={mar}
+               wimg={marp}
+        />
+
+        <Navcard 
+        name="/APOD"
+        hd="APOD"
+        pp="APOD: Astronomy Picture of the Day. Each day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer.Astronomy is the study of everything in the universe beyond Earth's atmosphere. That includes objects we can see with our naked eyes, like the Sun, the Moon, the planets,and the stars."
+        but="Go to APOD" 
+        sr={pod} 
+        wimg="
+        APOD: Astronomy Picture of the DayEach day a different image or photograph of our universe is featured, along with a brief explanation written by a professional astronomer."      
+        />
+
+        <Navcard 
+        name="/NEOW"
+        hd="Asteroids"
+        pp={astp}
+        p2="Asteroids are small, rocky objects that orbit the Sun. Although asteroids orbit the Sun like planets, they are much smaller than planets. There are lots of asteroids in our solar system."
+        but="Go to Asteriods"
+        sr={neow}
+        wimg={astp}
+        /> 
+
+      </div>
+     
+     <div style={{marginTop:"10px"}}>
      <Lowernav />
      </div>
 
