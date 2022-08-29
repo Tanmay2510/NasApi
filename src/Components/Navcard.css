@@ -68,6 +68,27 @@
     margin-top: 0.36603221083455345vw;
 }
 
+@media all and (min-width:2100px){
+    .box2{
+        height: 800px;
+    }
+    .otherside p{
+        font-size:1vw ;
+    }
+    .otherside li{
+        font-size: 0.8vw;
+    }
+    .inside p{
+        font-size: 0.8vw;
+    }
+    .box2 img{
+        width: 15vw;
+    }
+    .box2 h1{
+        font-size: 2.3vw;
+    }
+
+}
 @media all and (min-width:1720px){
     .otherside p{
         font-size:1vw ;
@@ -79,23 +100,26 @@
         font-size: 1vw;
     }
     .box2 img{
-        width: 18vw;
+        width: 15vw;
     }
     .box2 h1{
         font-size: 2.5vw;
     }
+    
    
 }
-@media all and(min-width:2350px){
+@media all and (min-width:1440px){
     .box2{
-        height: 700px;
+        height: 750px;
     }
 }
+
 @media all and (min-width:1370px){
     .box2{
         width: 400px;
         height: 600px;
     }
+   
 }
 @media all and (max-width:1100px){
     .box2{
