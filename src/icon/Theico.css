@@ -1,7 +1,21 @@
 .theico{
     margin-right: 2vw;
     margin-left: -5.1vw;
+    position: relative;
     z-index: 1;
     cursor: pointer;
+    height: 3vw;
+    width: 3vw;
     background-color: transparent !important;
 }
+@media all and (max-width:1060px){
+    .theico{
+        margin-left: 4vw;
+    }
+}
+@media all and (max-width:610px){
+    .theico{
+        margin-left: 2vw;
+    }
+}
+

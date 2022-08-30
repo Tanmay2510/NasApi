@@ -12,7 +12,7 @@ function Theico() {
       bottom: 1,
     }}
     stroke="currentColor" fill="white" strokeWidth="0" 
-    viewBox="0 0 512 512" height="2vw" width="2vw" 
+    viewBox="0 0 512 512" 
     className='theico'
     xmlns="http://www.w3.org/2000/svg" >
     <path d="M247 32v87h18V32zm-40.4 105l14.5 29-68 17h205.8l-68-17 14.5-29zm-73 64l-7 14h258.8l-7-14zm-55.88
