@@ -189,6 +189,9 @@
     .morph{
         margin-bottom: -20vw;
     }
+    .part img{
+        width: 30vw;
+    }
   
 }
 @media all and (max-width:450px){
